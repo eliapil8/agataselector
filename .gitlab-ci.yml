@@ -1,0 +1,50 @@
+stages:
+- build 
+- test
+- deploy
+
+build:
+  stage: build
+  script:
+    - cmake -B build -DENABLE_TESTING=ON -S .
+    - cmake --build build
+
+buildGridOpt:
+  stage: build
+  script:
+    - cmake -B build -DENABLE_TESTING=ON -DGRID_OPTIMIZER:BOOL=ON -S .
+    - cmake --build build
+
+runGlobalTest:
+  stage: test
+  script:
+    - cmake -B build -DENABLE_TESTING=ON -S .
+    - cmake --build build
+    - cd build
+    - source Scripts/selector.sh
+    - cd Tests
+    - ctest --output-on-failure -j6
+  artifacts:
+      paths:
+        - build/Tests/test.root
+
+runUnitTest:
+  stage: test
+  script:
+    - cmake -B build -DENABLE_TESTING=ON -S .
+    - cmake --build build
+    - cd build
+    - source Scripts/selector.sh
+    - cd Tests/src/Physics
+    - ./TESTEnergyLoss
+    - ./TESTReactionReconstruction
+
+deploy_zenodo:
+  stage: deploy
+  image: gitlab-registry.in2p3.fr/escape2020/wp3/eossr:v1.0
+  before_script:
+    - eossr-check-connection-zenodo --token $ZENODO_TOKEN -p $CI_PROJECT_DIR
+  script:
+    - eossr-upload-repository --add-escape2020 -t $ZENODO_TOKEN -i $CI_PROJECT_DIR --archive-name $CI_PROJECT_NAME.zip -id $ZENODO_DEPOSIT_ID
+  only:
+    - tags

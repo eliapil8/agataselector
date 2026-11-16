@@ -1,0 +1,63 @@
+##################Start of minimizer###################
+##################End of minimizer#####################
+##################Scan of PRISMA_CONF of X_SHIFT
+=============== it: 0 =================
+par: PRISMA_CONF X_SHIFT ---> val: 0
+COST 0.485038
+FITTED MEAN 4.27582
+FITTED SIGMA 0.194254
+=============== it: 1 =================
+par: PRISMA_CONF X_SHIFT ---> val: -0.01
+COST 0.444214
+FITTED MEAN 4.20341
+FITTED SIGMA 0.185013
+=============== it: 2 =================
+par: PRISMA_CONF X_SHIFT ---> val: -0.008
+COST 0.452019
+FITTED MEAN 4.21717
+FITTED SIGMA 0.18687
+=============== it: 3 =================
+par: PRISMA_CONF X_SHIFT ---> val: -0.006
+COST 0.459991
+FITTED MEAN 4.23129
+FITTED SIGMA 0.188697
+=============== it: 4 =================
+par: PRISMA_CONF X_SHIFT ---> val: -0.004
+COST 0.468123
+FITTED MEAN 4.24575
+FITTED SIGMA 0.1905
+=============== it: 5 =================
+par: PRISMA_CONF X_SHIFT ---> val: -0.002
+COST 0.476478
+FITTED MEAN 4.2606
+FITTED SIGMA 0.19236
+=============== it: 6 =================
+par: PRISMA_CONF X_SHIFT ---> val: 0
+COST 0.485038
+FITTED MEAN 4.27582
+FITTED SIGMA 0.194255
+=============== it: 7 =================
+par: PRISMA_CONF X_SHIFT ---> val: 0.002
+COST 0.493732
+FITTED MEAN 4.29136
+FITTED SIGMA 0.1961
+=============== it: 8 =================
+par: PRISMA_CONF X_SHIFT ---> val: 0.004
+COST 0.502717
+FITTED MEAN 4.30731
+FITTED SIGMA 0.198125
+=============== it: 9 =================
+par: PRISMA_CONF X_SHIFT ---> val: 0.006
+COST 0.511939
+FITTED MEAN 4.32365
+FITTED SIGMA 0.200228
+=============== it: 10 =================
+par: PRISMA_CONF X_SHIFT ---> val: 0.008
+COST 0.521297
+FITTED MEAN 4.34027
+FITTED SIGMA 0.20232
+=============== it: 11 =================
+par: PRISMA_CONF X_SHIFT ---> val: 0.01
+COST 0.53086
+FITTED MEAN 4.35719
+FITTED SIGMA 0.204527

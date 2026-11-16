@@ -1,0 +1,72 @@
+# BasedOnStyle:  GNU
+# AllowAllParametersOfDeclarationOnNextLine: false
+# AllowShortBlocksOnASingleLine: Always
+# AllowShortCaseLabelsOnASingleLine: true
+# AllowShortFunctionsOnASingleLine: All
+# # Uncommenting these lines will sometimes result in lines following an
+# # if(){} or for(){} block being attached to the end of the block.
+# AllowShortIfStatementsOnASingleLine: true
+# AllowShortLoopsOnASingleLine: true
+# AlwaysBreakAfterDefinitionReturnType: None
+# AlwaysBreakAfterReturnType: None
+# BreakBeforeBraces: Custom
+# UseTab: Never 
+# IndentWidth: 4
+# ContinuationIndentWidth: 4
+# Cpp11BracedListStyle: true
+# KeepEmptyLinesAtTheStartOfBlocks: false
+# Language:        Cpp
+# MaxEmptyLinesToKeep: 1
+# NamespaceIndentation: All
+# PenaltyExcessCharacter: 100
+# PenaltyReturnTypeOnItsOwnLine: 1
+# PointerAlignment: Left
+# ReferenceAlignment: Left
+# SortIncludes: CaseSensitive
+# SpaceBeforeParens: Never
+# SpacesInContainerLiterals: false
+# AlignAfterOpenBracket: Align
+# AlignArrayOfStructures: Right
+# AlignConsecutiveAssignments: AcrossEmptyLinesAndComments
+# AlignConsecutiveBitFields: AcrossEmptyLinesAndComments
+# AlignConsecutiveDeclarations:  AcrossEmptyLinesAndComments
+# AlignConsecutiveMacros: AcrossEmptyLinesAndComments
+# AlignOperands: AlignAfterOperator
+# AlignTrailingComments: true
+# Standard:        c++17
+
+
+# ---
+BasedOnStyle: Microsoft
+AlignAfterOpenBracket: Align
+AlignConsecutiveMacros: 'true'
+AlignConsecutiveAssignments: 'true'
+AlignConsecutiveDeclarations: 'true'
+AlignOperands: 'true'
+AllowAllArgumentsOnNextLine: 'false'
+AllowShortBlocksOnASingleLine: 'true'
+AllowShortCaseLabelsOnASingleLine: 'false'
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLambdasOnASingleLine: All
+AlwaysBreakBeforeMultilineStrings: 'false'
+AlwaysBreakTemplateDeclarations: 'Yes'
+BinPackParameters: 'false'
+PointerAlignment: Right
+SpaceAfterLogicalNot: 'false'
+SpaceBeforeAssignmentOperators: 'true'
+SpaceBeforeCtorInitializerColon: 'true'
+SpaceBeforeInheritanceColon: 'true'
+SpaceBeforeRangeBasedForLoopColon: 'true'
+SpaceInEmptyParentheses: 'false'
+SpacesBeforeTrailingComments: '1'
+SpacesInAngles: 'false'
+SpacesInCStyleCastParentheses: 'false'
+SpacesInContainerLiterals: 'false'
+SpacesInParentheses: 'false'
+SpacesInSquareBrackets: 'false'
+TabWidth: '4'
+UseTab: Never
+ColumnLimit: '100'
+...
+

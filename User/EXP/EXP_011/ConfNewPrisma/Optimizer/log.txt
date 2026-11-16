@@ -1,0 +1,5 @@
+##################Start of minimizer###################
+##################End of minimizer#####################
+##################Scan of PRISMA_CONF of TOF_OFFSET
+=============== it: 0 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: -7e-09

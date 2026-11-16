@@ -1,0 +1,7 @@
+add_executable(TESTEnergyLoss TESTEnergyLoss.cxx)
+target_link_libraries(TESTEnergyLoss gtest_main EnergyLoss)
+gtest_discover_tests(TESTEnergyLoss)
+
+add_executable(TESTReactionReconstruction TESTReactionReconstruction.cxx)
+target_link_libraries(TESTReactionReconstruction gtest_main ReactionReconstruction)
+gtest_discover_tests(TESTReactionReconstruction)

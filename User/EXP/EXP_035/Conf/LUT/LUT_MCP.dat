@@ -1,0 +1,23 @@
+#Board	channel	name	thr_lo	thr_hi	Time Offset
+1		0		D1X1		6000   16000        0 
+1		1		D1Y1		6000   16000   	    0   
+1		2		nnn	    0	6000 	    0   
+1		4		nnn		0   6000 	    0 
+1		5		nnn		0   6000        0 
+1		6		nnn   	    0   6000 	    0   
+1		8		nnn	    0   6000        0 
+1		9		nnn		    0   6000        0 
+1		10	    nnn		    0   2000        0   
+1		12      nnn		    0   2000        0 
+1		13      nnn		    0   2000        0 
+1		14      nnn		    0   2000        0   
+--------------------------------------------------------
+#Transformation matrix that brings the 2D data positions to the cad reference points
+#     MCP 1	       	    	       MCP2
+#xcad1 ycad1 zcad1 xdata1 ydata1   xcad1 ycad1 zcad1 xdata1 ydata1 
+#xcad2 ycad2 zcad2 xdata2 ydata2   xcad2 ycad2 zcad2 xdata2 ydata2 
+#...
+0   0   -7000.   10524   11091	2.5   0   1.   1390   1400
+63.3   -45   -7002.   7648   9018	3   0   1.5   1450   1450
+-63.3   45   -6998.   12888 13461   	1.5   -0.5   0.5   1300 1400   
+63.3    45  -7002   7668    13461   63.3    45  -7002   7668    13461

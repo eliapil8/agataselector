@@ -1,0 +1,3 @@
+MCP position calibration file
+id 0   thr -10000 10000 cal 51.4199 -0.0387309  2.1084e-06 
+id 1   thr -10000 10000 cal -82.7449  0.0328323 

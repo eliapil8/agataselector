@@ -1,0 +1,5 @@
+#MCP position calibration file
+#X
+id 0  cal 43.5595 -0.0324243  
+#Y
+id 1  cal -81.9025  0.0332038

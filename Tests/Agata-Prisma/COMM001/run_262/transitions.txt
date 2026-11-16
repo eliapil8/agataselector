@@ -1,0 +1,3 @@
+#file_name transition_energy max_centroid_discrepancy max_sigma integral max_integral_discr
+AgataPrisma/Z16/A32/h_DC_ion_32_16 2230.57 3.9 5.8 3449 20
+AgataPrisma/Z16/A32/h_DCBP_ion_32_16  1131.739 1 5.1 8000 50

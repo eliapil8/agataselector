@@ -1,0 +1,946 @@
+=============== it: 0 =================
+par: AGATA_CONF Z_SHIFT ---> val: 0
+par: AGATA_CONF ANGLE ---> val: 2.79253
+par: AGATA_CONF PHI ---> val: 0
+par: PRISMA_CONF Z_SHIFT ---> val: 0
+par: PRISMA_CONF ANGLE ---> val: 0.383972
+par: PRISMA_CONF PHI ---> val: 0
+COST 4.67991
+FITTED MEAN 1173.2
+FITTED SIGMA 4.67991
+--------------- it: 0 -----------------
+=============== it: 1 =================
+par: AGATA_CONF Z_SHIFT ---> val: 1e-05
+par: AGATA_CONF ANGLE ---> val: 2.79253
+par: AGATA_CONF PHI ---> val: 0
+par: PRISMA_CONF Z_SHIFT ---> val: 0
+par: PRISMA_CONF ANGLE ---> val: 0.383972
+par: PRISMA_CONF PHI ---> val: 0
+COST 4.69528
+FITTED MEAN 1173.19
+FITTED SIGMA 4.69528
+--------------- it: 1 -----------------
+=============== it: 2 =================
+par: AGATA_CONF Z_SHIFT ---> val: -4e-06
+par: AGATA_CONF ANGLE ---> val: 2.79253
+par: AGATA_CONF PHI ---> val: 0
+par: PRISMA_CONF Z_SHIFT ---> val: 0
+par: PRISMA_CONF ANGLE ---> val: 0.383972
+par: PRISMA_CONF PHI ---> val: 0
+COST 4.67948
+FITTED MEAN 1173.2
+FITTED SIGMA 4.67948
+--------------- it: 2 -----------------
+=============== it: 3 =================
+par: AGATA_CONF Z_SHIFT ---> val: -1.6e-05
+par: AGATA_CONF ANGLE ---> val: 2.79253
+par: AGATA_CONF PHI ---> val: 0
+par: PRISMA_CONF Z_SHIFT ---> val: 0
+par: PRISMA_CONF ANGLE ---> val: 0.383972
+par: PRISMA_CONF PHI ---> val: 0
+COST 4.67948
+FITTED MEAN 1173.2
+FITTED SIGMA 4.67948
+--------------- it: 3 -----------------
+=============== it: 4 =================
+par: AGATA_CONF Z_SHIFT ---> val: -5.2e-05
+par: AGATA_CONF ANGLE ---> val: 2.79253
+par: AGATA_CONF PHI ---> val: 0
+par: PRISMA_CONF Z_SHIFT ---> val: 0
+par: PRISMA_CONF ANGLE ---> val: 0.383972
+par: PRISMA_CONF PHI ---> val: 0
+COST 4.66608
+FITTED MEAN 1173.21
+FITTED SIGMA 4.66608
+--------------- it: 4 -----------------
+=============== it: 5 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.00016
+par: AGATA_CONF ANGLE ---> val: 2.79253
+par: AGATA_CONF PHI ---> val: 0
+par: PRISMA_CONF Z_SHIFT ---> val: 0
+par: PRISMA_CONF ANGLE ---> val: 0.383972
+par: PRISMA_CONF PHI ---> val: 0
+COST 4.66167
+FITTED MEAN 1173.23
+FITTED SIGMA 4.66167
+--------------- it: 5 -----------------
+=============== it: 6 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000484
+par: AGATA_CONF ANGLE ---> val: 2.79253
+par: AGATA_CONF PHI ---> val: 0
+par: PRISMA_CONF Z_SHIFT ---> val: 0
+par: PRISMA_CONF ANGLE ---> val: 0.383972
+par: PRISMA_CONF PHI ---> val: 0
+COST 4.68971
+FITTED MEAN 1173.27
+FITTED SIGMA 4.68971
+--------------- it: 6 -----------------
+=============== it: 7 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.00016
+par: AGATA_CONF ANGLE ---> val: 3.07178
+par: AGATA_CONF PHI ---> val: 0
+par: PRISMA_CONF Z_SHIFT ---> val: 0
+par: PRISMA_CONF ANGLE ---> val: 0.383972
+par: PRISMA_CONF PHI ---> val: 0
+COST 5
+FITTED MEAN 1175.13
+FITTED SIGMA 5
+--------------- it: 7 -----------------
+=============== it: 8 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.00016
+par: AGATA_CONF ANGLE ---> val: 2.68083
+par: AGATA_CONF PHI ---> val: 0
+par: PRISMA_CONF Z_SHIFT ---> val: 0
+par: PRISMA_CONF ANGLE ---> val: 0.383972
+par: PRISMA_CONF PHI ---> val: 0
+COST 5
+FITTED MEAN 1171.63
+FITTED SIGMA 5
+--------------- it: 8 -----------------
+=============== it: 9 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.00016
+par: AGATA_CONF ANGLE ---> val: 2.83721
+par: AGATA_CONF PHI ---> val: 0
+par: PRISMA_CONF Z_SHIFT ---> val: 0
+par: PRISMA_CONF ANGLE ---> val: 0.383972
+par: PRISMA_CONF PHI ---> val: 0
+COST 4.91149
+FITTED MEAN 1173.57
+FITTED SIGMA 4.91149
+--------------- it: 9 -----------------
+=============== it: 10 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.00016
+par: AGATA_CONF ANGLE ---> val: 2.83721
+par: AGATA_CONF PHI ---> val: 0.00349066
+par: PRISMA_CONF Z_SHIFT ---> val: 0
+par: PRISMA_CONF ANGLE ---> val: 0.383972
+par: PRISMA_CONF PHI ---> val: 0
+COST 4.92405
+FITTED MEAN 1173.57
+FITTED SIGMA 4.92405
+--------------- it: 10 -----------------
+=============== it: 11 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.00016
+par: AGATA_CONF ANGLE ---> val: 2.83721
+par: AGATA_CONF PHI ---> val: -0.00139626
+par: PRISMA_CONF Z_SHIFT ---> val: 0
+par: PRISMA_CONF ANGLE ---> val: 0.383972
+par: PRISMA_CONF PHI ---> val: 0
+COST 4.91162
+FITTED MEAN 1173.58
+FITTED SIGMA 4.91162
+--------------- it: 11 -----------------
+=============== it: 12 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.00016
+par: AGATA_CONF ANGLE ---> val: 2.83721
+par: AGATA_CONF PHI ---> val: 0.000558505
+par: PRISMA_CONF Z_SHIFT ---> val: 0
+par: PRISMA_CONF ANGLE ---> val: 0.383972
+par: PRISMA_CONF PHI ---> val: 0
+COST 4.92346
+FITTED MEAN 1173.57
+FITTED SIGMA 4.92346
+--------------- it: 12 -----------------
+=============== it: 13 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.00016
+par: AGATA_CONF ANGLE ---> val: 2.83721
+par: AGATA_CONF PHI ---> val: 0.000558505
+par: PRISMA_CONF Z_SHIFT ---> val: 1e-05
+par: PRISMA_CONF ANGLE ---> val: 0.383972
+par: PRISMA_CONF PHI ---> val: 0
+COST 4.92346
+FITTED MEAN 1173.57
+FITTED SIGMA 4.92346
+--------------- it: 13 -----------------
+=============== it: 14 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.00016
+par: AGATA_CONF ANGLE ---> val: 2.83721
+par: AGATA_CONF PHI ---> val: 0.000558505
+par: PRISMA_CONF Z_SHIFT ---> val: -4e-06
+par: PRISMA_CONF ANGLE ---> val: 0.383972
+par: PRISMA_CONF PHI ---> val: 0
+COST 4.92346
+FITTED MEAN 1173.57
+FITTED SIGMA 4.92346
+--------------- it: 14 -----------------
+=============== it: 15 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.00016
+par: AGATA_CONF ANGLE ---> val: 2.83721
+par: AGATA_CONF PHI ---> val: 0.000558505
+par: PRISMA_CONF Z_SHIFT ---> val: 1.6e-06
+par: PRISMA_CONF ANGLE ---> val: 0.383972
+par: PRISMA_CONF PHI ---> val: 0
+COST 4.92346
+FITTED MEAN 1173.57
+FITTED SIGMA 4.92346
+--------------- it: 15 -----------------
+=============== it: 16 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.00016
+par: AGATA_CONF ANGLE ---> val: 2.83721
+par: AGATA_CONF PHI ---> val: 0.000558505
+par: PRISMA_CONF Z_SHIFT ---> val: 1.6e-06
+par: PRISMA_CONF ANGLE ---> val: 0.42237
+par: PRISMA_CONF PHI ---> val: 0
+COST 5
+FITTED MEAN 1174
+FITTED SIGMA 5
+--------------- it: 16 -----------------
+=============== it: 17 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.00016
+par: AGATA_CONF ANGLE ---> val: 2.83721
+par: AGATA_CONF PHI ---> val: 0.000558505
+par: PRISMA_CONF Z_SHIFT ---> val: 1.6e-06
+par: PRISMA_CONF ANGLE ---> val: 0.368614
+par: PRISMA_CONF PHI ---> val: 0
+COST 4.6828
+FITTED MEAN 1173.5
+FITTED SIGMA 4.6828
+--------------- it: 17 -----------------
+=============== it: 18 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.00016
+par: AGATA_CONF ANGLE ---> val: 2.83721
+par: AGATA_CONF PHI ---> val: 0.000558505
+par: PRISMA_CONF Z_SHIFT ---> val: 1.6e-06
+par: PRISMA_CONF ANGLE ---> val: 0.390116
+par: PRISMA_CONF PHI ---> val: 0
+COST 5
+FITTED MEAN 1173.61
+FITTED SIGMA 5
+--------------- it: 18 -----------------
+=============== it: 19 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.00016
+par: AGATA_CONF ANGLE ---> val: 2.83721
+par: AGATA_CONF PHI ---> val: 0.000558505
+par: PRISMA_CONF Z_SHIFT ---> val: 1.6e-06
+par: PRISMA_CONF ANGLE ---> val: 0.390116
+par: PRISMA_CONF PHI ---> val: 0.000174533
+COST 5
+FITTED MEAN 1173.61
+FITTED SIGMA 5
+--------------- it: 19 -----------------
+=============== it: 20 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.00016
+par: AGATA_CONF ANGLE ---> val: 2.83721
+par: AGATA_CONF PHI ---> val: 0.000558505
+par: PRISMA_CONF Z_SHIFT ---> val: 1.6e-06
+par: PRISMA_CONF ANGLE ---> val: 0.390116
+par: PRISMA_CONF PHI ---> val: -6.98132e-05
+COST 5
+FITTED MEAN 1173.61
+FITTED SIGMA 5
+--------------- it: 20 -----------------
+=============== it: 21 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.00016
+par: AGATA_CONF ANGLE ---> val: 2.83721
+par: AGATA_CONF PHI ---> val: 0.000558505
+par: PRISMA_CONF Z_SHIFT ---> val: 1.6e-06
+par: PRISMA_CONF ANGLE ---> val: 0.390116
+par: PRISMA_CONF PHI ---> val: 2.79253e-05
+COST 5
+FITTED MEAN 1173.61
+FITTED SIGMA 5
+--------------- it: 21 -----------------
+=============== it: 22 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000106667
+par: AGATA_CONF ANGLE ---> val: 2.80742
+par: AGATA_CONF PHI ---> val: 0
+par: PRISMA_CONF Z_SHIFT ---> val: -5.33333e-07
+par: PRISMA_CONF ANGLE ---> val: 0.379877
+par: PRISMA_CONF PHI ---> val: -2.79253e-05
+COST 4.55512
+FITTED MEAN 1173.32
+FITTED SIGMA 4.55512
+--------------- it: 22 -----------------
+=============== it: 23 =================
+par: AGATA_CONF Z_SHIFT ---> val: -8e-05
+par: AGATA_CONF ANGLE ---> val: 2.79253
+par: AGATA_CONF PHI ---> val: -0.000279253
+par: PRISMA_CONF Z_SHIFT ---> val: -1.6e-06
+par: PRISMA_CONF ANGLE ---> val: 0.374757
+par: PRISMA_CONF PHI ---> val: -5.58505e-05
+COST 4.78493
+FITTED MEAN 1173.08
+FITTED SIGMA 4.78493
+--------------- it: 23 -----------------
+=============== it: 24 =================
+par: AGATA_CONF Z_SHIFT ---> val: -8.88889e-05
+par: AGATA_CONF ANGLE ---> val: 2.79749
+par: AGATA_CONF PHI ---> val: -0.000186168
+par: PRISMA_CONF Z_SHIFT ---> val: -1.24444e-06
+par: PRISMA_CONF ANGLE ---> val: 0.376464
+par: PRISMA_CONF PHI ---> val: -9.30842e-06
+COST 4.69534
+FITTED MEAN 1173.17
+FITTED SIGMA 4.69534
+--------------- it: 24 -----------------
+=============== it: 25 =================
+par: AGATA_CONF Z_SHIFT ---> val: -6.51852e-05
+par: AGATA_CONF ANGLE ---> val: 2.78425
+par: AGATA_CONF PHI ---> val: -0.000434393
+par: PRISMA_CONF Z_SHIFT ---> val: -5.92593e-08
+par: PRISMA_CONF ANGLE ---> val: 0.380104
+par: PRISMA_CONF PHI ---> val: -1.24112e-05
+COST 4.83818
+FITTED MEAN 1173.05
+FITTED SIGMA 4.83818
+--------------- it: 25 -----------------
+=============== it: 26 =================
+par: AGATA_CONF Z_SHIFT ---> val: -3.35802e-05
+par: AGATA_CONF ANGLE ---> val: 2.7666
+par: AGATA_CONF PHI ---> val: -0.000765359
+par: PRISMA_CONF Z_SHIFT ---> val: -2.21235e-06
+par: PRISMA_CONF ANGLE ---> val: 0.378815
+par: PRISMA_CONF PHI ---> val: -1.65483e-05
+COST 5
+FITTED MEAN 1172.89
+FITTED SIGMA 5
+--------------- it: 26 -----------------
+=============== it: 27 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000128395
+par: AGATA_CONF ANGLE ---> val: 2.81956
+par: AGATA_CONF PHI ---> val: 0.000227539
+par: PRISMA_CONF Z_SHIFT ---> val: 6.46914e-07
+par: PRISMA_CONF ANGLE ---> val: 0.382683
+par: PRISMA_CONF PHI ---> val: -4.13708e-06
+COST 4.63374
+FITTED MEAN 1173.5
+FITTED SIGMA 4.63374
+--------------- it: 27 -----------------
+=============== it: 28 =================
+par: AGATA_CONF Z_SHIFT ---> val: -2.30453e-05
+par: AGATA_CONF ANGLE ---> val: 2.76072
+par: AGATA_CONF PHI ---> val: -0.000131007
+par: PRISMA_CONF Z_SHIFT ---> val: -3.96708e-07
+par: PRISMA_CONF ANGLE ---> val: 0.378385
+par: PRISMA_CONF PHI ---> val: -1.79273e-05
+COST 5
+FITTED MEAN 1172.72
+FITTED SIGMA 5
+--------------- it: 28 -----------------
+=============== it: 29 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000125761
+par: AGATA_CONF ANGLE ---> val: 2.81808
+par: AGATA_CONF PHI ---> val: -3.27519e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -9.9177e-08
+par: PRISMA_CONF ANGLE ---> val: 0.382576
+par: PRISMA_CONF PHI ---> val: -4.48183e-06
+COST 4.59674
+FITTED MEAN 1173.49
+FITTED SIGMA 4.59674
+--------------- it: 29 -----------------
+=============== it: 30 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000138052
+par: AGATA_CONF ANGLE ---> val: 2.82495
+par: AGATA_CONF PHI ---> val: 0.000437266
+par: PRISMA_CONF Z_SHIFT ---> val: -3.50754e-07
+par: PRISMA_CONF ANGLE ---> val: 0.383077
+par: PRISMA_CONF PHI ---> val: -2.87297e-06
+COST 4.67632
+FITTED MEAN 1173.52
+FITTED SIGMA 4.67632
+--------------- it: 30 -----------------
+=============== it: 31 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000130736
+par: AGATA_CONF ANGLE ---> val: 2.82086
+par: AGATA_CONF PHI ---> val: 0.000396853
+par: PRISMA_CONF Z_SHIFT ---> val: 1.13233e-06
+par: PRISMA_CONF ANGLE ---> val: 0.388922
+par: PRISMA_CONF PHI ---> val: -3.83063e-06
+COST 4.65999
+FITTED MEAN 1173.54
+FITTED SIGMA 4.65999
+--------------- it: 31 -----------------
+=============== it: 32 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000263204
+par: AGATA_CONF ANGLE ---> val: 2.83527
+par: AGATA_CONF PHI ---> val: 0.000342969
+par: PRISMA_CONF Z_SHIFT ---> val: 2.65325e-07
+par: PRISMA_CONF ANGLE ---> val: 0.383063
+par: PRISMA_CONF PHI ---> val: -1.44159e-05
+COST 4.87932
+FITTED MEAN 1173.53
+FITTED SIGMA 4.87932
+--------------- it: 32 -----------------
+=============== it: 33 =================
+par: AGATA_CONF Z_SHIFT ---> val: -6.58009e-05
+par: AGATA_CONF ANGLE ---> val: 2.80321
+par: AGATA_CONF PHI ---> val: 8.57422e-05
+par: PRISMA_CONF Z_SHIFT ---> val: 6.63314e-08
+par: PRISMA_CONF ANGLE ---> val: 0.383745
+par: PRISMA_CONF PHI ---> val: -3.60398e-06
+COST 4.55252
+FITTED MEAN 1173.3
+FITTED SIGMA 4.55252
+--------------- it: 33 -----------------
+=============== it: 34 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000101068
+par: AGATA_CONF ANGLE ---> val: 2.79561
+par: AGATA_CONF PHI ---> val: -0.000211472
+par: PRISMA_CONF Z_SHIFT ---> val: 7.55108e-07
+par: PRISMA_CONF ANGLE ---> val: 0.384181
+par: PRISMA_CONF PHI ---> val: -1.17866e-05
+COST 4.67773
+FITTED MEAN 1173.25
+FITTED SIGMA 4.67773
+--------------- it: 34 -----------------
+=============== it: 35 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000128806
+par: AGATA_CONF ANGLE ---> val: 2.81761
+par: AGATA_CONF PHI ---> val: 0.000275082
+par: PRISMA_CONF Z_SHIFT ---> val: -7.42887e-08
+par: PRISMA_CONF ANGLE ---> val: 0.383353
+par: PRISMA_CONF PHI ---> val: -5.10138e-06
+COST 4.62157
+FITTED MEAN 1173.48
+FITTED SIGMA 4.62157
+--------------- it: 35 -----------------
+=============== it: 36 =================
+par: AGATA_CONF Z_SHIFT ---> val: -6.87221e-05
+par: AGATA_CONF ANGLE ---> val: 2.83639
+par: AGATA_CONF PHI ---> val: 0.000317488
+par: PRISMA_CONF Z_SHIFT ---> val: 3.79591e-07
+par: PRISMA_CONF ANGLE ---> val: 0.383079
+par: PRISMA_CONF PHI ---> val: -1.63601e-05
+COST 4.88227
+FITTED MEAN 1173.52
+FITTED SIGMA 4.88227
+--------------- it: 36 -----------------
+=============== it: 37 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000137181
+par: AGATA_CONF ANGLE ---> val: 2.80349
+par: AGATA_CONF PHI ---> val: 7.9372e-05
+par: PRISMA_CONF Z_SHIFT ---> val: 9.48978e-08
+par: PRISMA_CONF ANGLE ---> val: 0.383749
+par: PRISMA_CONF PHI ---> val: -4.09001e-06
+COST 4.54414
+FITTED MEAN 1173.33
+FITTED SIGMA 4.54414
+--------------- it: 37 -----------------
+=============== it: 38 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000100134
+par: AGATA_CONF ANGLE ---> val: 2.80226
+par: AGATA_CONF PHI ---> val: -0.000185192
+par: PRISMA_CONF Z_SHIFT ---> val: -1.09855e-06
+par: PRISMA_CONF ANGLE ---> val: 0.376405
+par: PRISMA_CONF PHI ---> val: -1.26159e-05
+COST 4.64637
+FITTED MEAN 1173.25
+FITTED SIGMA 4.64637
+--------------- it: 38 -----------------
+=============== it: 39 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000107785
+par: AGATA_CONF ANGLE ---> val: 2.80691
+par: AGATA_CONF PHI ---> val: -3.96807e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -5.40828e-07
+par: PRISMA_CONF ANGLE ---> val: 0.379535
+par: PRISMA_CONF PHI ---> val: -1.04196e-05
+COST 4.55106
+FITTED MEAN 1173.29
+FITTED SIGMA 4.55106
+--------------- it: 39 -----------------
+=============== it: 40 =================
+par: AGATA_CONF Z_SHIFT ---> val: -9.5605e-05
+par: AGATA_CONF ANGLE ---> val: 2.79936
+par: AGATA_CONF PHI ---> val: -0.000104951
+par: PRISMA_CONF Z_SHIFT ---> val: -1.00905e-06
+par: PRISMA_CONF ANGLE ---> val: 0.381595
+par: PRISMA_CONF PHI ---> val: -1.44036e-05
+COST 4.65413
+FITTED MEAN 1173.27
+FITTED SIGMA 4.65413
+--------------- it: 40 -----------------
+=============== it: 41 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000120198
+par: AGATA_CONF ANGLE ---> val: 2.81451
+par: AGATA_CONF PHI ---> val: 0.000144417
+par: PRISMA_CONF Z_SHIFT ---> val: 2.32924e-07
+par: PRISMA_CONF ANGLE ---> val: 0.382411
+par: PRISMA_CONF PHI ---> val: -6.70371e-06
+COST 4.58759
+FITTED MEAN 1173.43
+FITTED SIGMA 4.58759
+--------------- it: 41 -----------------
+=============== it: 42 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.54084
+FITTED MEAN 1173.43
+FITTED SIGMA 4.54084
+--------------- it: 42 -----------------
+=============== it: 43 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.54084
+FITTED MEAN 1173.43
+FITTED SIGMA 4.54084
+--------------- it: 43 -----------------
+=============== it: 44 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000109565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.54084
+FITTED MEAN 1173.43
+FITTED SIGMA 4.54084
+--------------- it: 44 -----------------
+=============== it: 45 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000111565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.54084
+FITTED MEAN 1173.43
+FITTED SIGMA 4.54084
+--------------- it: 45 -----------------
+=============== it: 46 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000100565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.54084
+FITTED MEAN 1173.43
+FITTED SIGMA 4.54084
+--------------- it: 46 -----------------
+=============== it: 47 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000120565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.53778
+FITTED MEAN 1173.44
+FITTED SIGMA 4.53778
+--------------- it: 47 -----------------
+=============== it: 48 =================
+par: AGATA_CONF Z_SHIFT ---> val: 0.000227938
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.54334
+FITTED MEAN 1173.36
+FITTED SIGMA 4.54334
+--------------- it: 48 -----------------
+=============== it: 49 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000449068
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.50591
+FITTED MEAN 1173.5
+FITTED SIGMA 4.50591
+--------------- it: 49 -----------------
+=============== it: 50 =================
+par: AGATA_CONF Z_SHIFT ---> val: 0.00340828
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.64513
+FITTED MEAN 1172.73
+FITTED SIGMA 4.64513
+--------------- it: 50 -----------------
+=============== it: 51 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.00362941
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.53456
+FITTED MEAN 1174.03
+FITTED SIGMA 4.53456
+--------------- it: 51 -----------------
+=============== it: 52 =================
+par: AGATA_CONF Z_SHIFT ---> val: 0.020931
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 5
+FITTED MEAN 1170
+FITTED SIGMA 5
+--------------- it: 52 -----------------
+=============== it: 53 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.0211521
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.99999
+FITTED MEAN 1176
+FITTED SIGMA 4.99999
+--------------- it: 53 -----------------
+=============== it: 54 =================
+par: AGATA_CONF Z_SHIFT ---> val: 0.0409936
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.98149
+FITTED MEAN 1170
+FITTED SIGMA 4.98149
+--------------- it: 54 -----------------
+=============== it: 55 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.0412147
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 5
+FITTED MEAN 1176
+FITTED SIGMA 5
+--------------- it: 55 -----------------
+=============== it: 56 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80896
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.54084
+FITTED MEAN 1173.43
+FITTED SIGMA 4.54084
+--------------- it: 56 -----------------
+=============== it: 57 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80892
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.54334
+FITTED MEAN 1173.43
+FITTED SIGMA 4.54334
+--------------- it: 57 -----------------
+=============== it: 58 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.81072
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.55258
+FITTED MEAN 1173.44
+FITTED SIGMA 4.55258
+--------------- it: 58 -----------------
+=============== it: 59 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80716
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.52194
+FITTED MEAN 1173.39
+FITTED SIGMA 4.52194
+--------------- it: 59 -----------------
+=============== it: 60 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.99052
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 5
+FITTED MEAN 1176
+FITTED SIGMA 5
+--------------- it: 60 -----------------
+=============== it: 61 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.62735
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 5
+FITTED MEAN 1170
+FITTED SIGMA 5
+--------------- it: 61 -----------------
+=============== it: 62 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 5.05609
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.99658
+FITTED MEAN 1176
+FITTED SIGMA 4.99658
+--------------- it: 62 -----------------
+=============== it: 63 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 0.561788
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.99996
+FITTED MEAN 1170
+FITTED SIGMA 4.99996
+--------------- it: 63 -----------------
+=============== it: 64 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 7.20698
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.99997
+FITTED MEAN 1176
+FITTED SIGMA 4.99997
+--------------- it: 64 -----------------
+=============== it: 65 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: -1.5891
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.99653
+FITTED MEAN 1170
+FITTED SIGMA 4.99653
+--------------- it: 65 -----------------
+=============== it: 66 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 0.000388582
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.53279
+FITTED MEAN 1173.44
+FITTED SIGMA 4.53279
+--------------- it: 66 -----------------
+=============== it: 67 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: -0.000309549
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.54334
+FITTED MEAN 1173.43
+FITTED SIGMA 4.54334
+--------------- it: 67 -----------------
+=============== it: 68 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 0.00880291
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.50188
+FITTED MEAN 1173.43
+FITTED SIGMA 4.50188
+--------------- it: 68 -----------------
+=============== it: 69 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: -0.00872388
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.53744
+FITTED MEAN 1173.42
+FITTED SIGMA 4.53744
+--------------- it: 69 -----------------
+=============== it: 70 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 0.0797382
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.50025
+FITTED MEAN 1173.41
+FITTED SIGMA 4.50025
+--------------- it: 70 -----------------
+=============== it: 71 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: -0.0796592
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.74131
+FITTED MEAN 1173.28
+FITTED SIGMA 4.74131
+--------------- it: 71 -----------------
+=============== it: 72 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 0.373173
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.53135
+FITTED MEAN 1173.49
+FITTED SIGMA 4.53135
+--------------- it: 72 -----------------
+=============== it: 73 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: -0.373094
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 5
+FITTED MEAN 1173.28
+FITTED SIGMA 5
+--------------- it: 73 -----------------
+=============== it: 74 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 1.04169
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 5
+FITTED MEAN 1174.13
+FITTED SIGMA 5
+--------------- it: 74 -----------------
+=============== it: 75 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: -1.04161
+par: PRISMA_CONF Z_SHIFT ---> val: -1.29864e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 5
+FITTED MEAN 1173.81
+FITTED SIGMA 5
+--------------- it: 75 -----------------
+=============== it: 76 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: 8.70136e-07
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.54084
+FITTED MEAN 1173.43
+FITTED SIGMA 4.54084
+--------------- it: 76 -----------------
+=============== it: 77 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.12986e-06
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.54084
+FITTED MEAN 1173.43
+FITTED SIGMA 4.54084
+--------------- it: 77 -----------------
+=============== it: 78 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: 9.87014e-06
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.54084
+FITTED MEAN 1173.43
+FITTED SIGMA 4.54084
+--------------- it: 78 -----------------
+=============== it: 79 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -1.01299e-05
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.54084
+FITTED MEAN 1173.43
+FITTED SIGMA 4.54084
+--------------- it: 79 -----------------
+=============== it: 80 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: 9.98701e-05
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.54084
+FITTED MEAN 1173.43
+FITTED SIGMA 4.54084
+--------------- it: 80 -----------------
+=============== it: 81 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -0.00010013
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.54084
+FITTED MEAN 1173.43
+FITTED SIGMA 4.54084
+--------------- it: 81 -----------------
+=============== it: 82 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: 0.00099987
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.54084
+FITTED MEAN 1173.43
+FITTED SIGMA 4.54084
+--------------- it: 82 -----------------
+=============== it: 83 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -0.00100013
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.54084
+FITTED MEAN 1173.43
+FITTED SIGMA 4.54084
+--------------- it: 83 -----------------
+=============== it: 84 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: 0.00999987
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.54084
+FITTED MEAN 1173.43
+FITTED SIGMA 4.54084
+--------------- it: 84 -----------------
+=============== it: 85 =================
+par: AGATA_CONF Z_SHIFT ---> val: -0.000110565
+par: AGATA_CONF ANGLE ---> val: 2.80894
+par: AGATA_CONF PHI ---> val: 3.95164e-05
+par: PRISMA_CONF Z_SHIFT ---> val: -0.0100001
+par: PRISMA_CONF ANGLE ---> val: 0.381982
+par: PRISMA_CONF PHI ---> val: -9.5374e-06
+COST 4.54084
+FITTED MEAN 1173.43
+FITTED SIGMA 4.54084
+--------------- it: 85 -----------------

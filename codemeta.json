@@ -1,0 +1,106 @@
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@type": "SoftwareSourceCode",
+    "license": "https://spdx.org/licenses/0BSD",
+    "codeRepository": "https://baltig.infn.it/gamma/agataselector",
+    "dateCreated": "2023-09-08",
+    "datePublished": "2022-04-07",
+    "dateModified": "2023-09-08",
+    "name": "agataselector",
+    "version": "0.3.0",
+    "description": "This selector is meant to analyze the data of AGATA+$Ancillary, producing various histograms and performing kinematic calculations and other operations useful for Doppler correction and other analysis tasks.\nThe starting point of the selector are the ROOT files produced by femul.\nThe code is a work in progress and is meant to be updated and modified by both users and the local group. We log the bug solutions, improvements and broken compatibility issues  in the CHANGELOG.md file.\nIt is based on ROOT and requires an installed version where ROOT has been compiled with at least c++ 14.\nOur intent is to make the analysis procedure straightforward and reproducible.\nEvery output file will contain a configuration folder that contains the configuration file of the selector used to perform the calculations while also keeping track of the date and the git version of the code, so that at any time you are able to perform the exact analysis.",
+    "readme": "https://baltig.infn.it/gamma/agataselector/-/blob/main/README.md",
+    "softwareVersion": "0.3.0",
+    "keywords": [
+        "Nuclear Physics",
+        "Agata",
+        "gamma-ray spectroscopy",
+        "Nuclear structure"
+    ],
+    "author": [
+        {
+            "@type": "Person",
+            "@id": "https://orcid.org/0000-0002-8644-5355",
+            "givenName": "Daniele",
+            "familyName": "Brugnara",
+            "email": "dbrugnara@lnl.infn.it",
+            "affiliation": {
+                "@type": "Organization",
+                "name": " Istituto Nazionale di Fisica Nucleare, Laboratori Nazionali di Legnaro, Legnaro, Italy "
+            }
+        },
+        {
+            "@type": "Person",
+            "givenName": "Matus",
+            "familyName": "Sedlak",
+            "email": "matus.sedlak@lnl.infn.it",
+            "affiliation": {
+                "@type": "Organization",
+                "name": " Istituto Nazionale di Fisica Nucleare, Laboratori Nazionali di Legnaro, Legnaro, Italy "
+            }
+        },
+        {
+            "@type": "Person",
+            "givenName": "Elia",
+            "familyName": "Pilotto",
+            "email": "elia.pilotto@pd.infn.it",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Dipartimento di Fisica, Università di Padova, Padova, Italy"
+            }
+        },
+        {
+            "@type": "Person",
+            "givenName": "Luca",
+            "familyName": "Zago",
+            "email": "luca.zago.1@studenti.unipd.it",
+            "affiliation": {
+                "@type": "Organization",
+                "name": " Istituto Nazionale di Fisica Nucleare, Laboratori Nazionali di Legnaro, Legnaro, Italy "
+            }
+        },
+        {
+            "@type": "Person",
+            "givenName": "Matus",
+            "familyName": "Balogh",
+            "email": "matus.balogh@lnl.infn.it",
+            "affiliation": {
+                "@type": "Organization",
+                "name": " Istituto Nazionale di Fisica Nucleare, Laboratori Nazionali di Legnaro, Legnaro, Italy "
+            }
+        },
+        {
+            "@type": "Person",
+            "givenName": "Filippo",
+            "familyName": "Angelini",
+            "email": "filippo.angelini@studenti.unipd.it",
+            "affiliation": {
+                "@type": "Organization",
+                "name": " Istituto Nazionale di Fisica Nucleare, Laboratori Nazionali di Legnaro, Legnaro, Italy "
+            }
+        },
+        {
+            "@type": "Person",
+            "givenName": "Sara",
+            "familyName": "Pigliapoco",
+            "email": "sara.pigliapoco@pd.infn.it",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Dipartimento di Fisica, Università di Padova, Padova, Italy"
+            }
+        }
+    ],
+    "maintainer": [
+        {
+            "@type": "Person",
+            "@id": "https://orcid.org/0000-0002-8644-5355",
+            "givenName": "Daniele",
+            "familyName": "Brugnara",
+            "email": "dbrugnara@lnl.infn.it",
+            "affiliation": {
+                "@type": "Organization",
+                "name": " Istituto Nazionale di Fisica Nucleare, Laboratori Nazionali di Legnaro, Legnaro, Italy "
+            }
+        }
+    ]
+}

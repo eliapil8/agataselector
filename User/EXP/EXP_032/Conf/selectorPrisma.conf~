@@ -1,0 +1,201 @@
+#Configuration file for the selector
+#Format: | KEYWORD | value(s) | Unit of measure | Comment |
+#Comments are ignored unit of measure # means none
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+DETECTORS_PRESENT
+EUCLIDES			NO	#		Euclides is present YES/NO
+DANTE				NO	#		Dante is present YES/NO
+LABR				NO	#		Labr is present YES/NO
+AGATA				NO	#		Agata is present YES/NO
+SPIDER				NO	#		Spider is present YES/NO
+PRISMA				YES	#		Prisma is present YES/NO
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+REPLAY_CONF
+REPLAY_DIR_PATTERN      run_	    #		Replay directory pattern
+TREE_NAME               PrismaTree  #		Input tree name
+IN_FILE_PATTERN         Tree_	    #		Input file pattern
+CONF_PATH               ./SelConf   #		Replay conf folder path
+OUT_PATH                ./Out	    #  		Output path
+OUT_FILE_PATTERN        run_	    #		Output file pattern
+IN_SUB_PATH             /.          #		Input sub path
+IN_PATH                 ./Runs	    #		Input path
+#----------------------------------------------------------- 
+
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+REACTION_CONF
+ENERGY			200.	MeV			Beam energy
+TARGET			238 92	#			Target ion A Z
+BEAM			26 12	#			Beam ion A Z
+ION			22 10	#			Fragment of interest for binary reaction calculation: A Z (those detected)
+ION			24 10	#			Fragment of interest for binary reaction calculation: A Z (those detected)
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+TARGET_CONF
+DEG_DENSITY			0	mg/cm^3			Degrader density in mg/cm^3
+DENSITY				0	mg/cm^3			Target density in mg/cm^3
+ROTATIONZ			0	deg			Target rotation on the Z axis in degrees
+DEG_DISTANCE			0	um			Degrader distance in um
+THICKNESS			0	um			Target thickness in um
+TILT				0	deg			Target tilt in degrees; Negative values for clockwise rotations
+DEG_THICKNESS			0	um			Degrader thickness in um
+ROTATIONX			0	deg			Target rotation on the X axis in degrees
+DEG_PRESENT			NO	#		Degrader present YES/NO
+DEG_MATERIAL			none	#		Degrader material
+MATERIAL			none	#		Target material
+DEG_POS				AFTER					Degrader position BEFORE/AFTER
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+AGATA_CONF
+BIN_WIDTH			1	#			Bin width in gamma histograms
+COINC_W_LEFT			0	#			Time window left with the same type of det
+COINC_W_RIGHT			10	#			Time window right with with the same type of det
+CFD_UNIT			10	ns			Cfd units
+TIME_UNIT			10	ns			Timestamp unit, should 10*ns
+X_SHIFT				0	mm			Detector x shift for optimization purposes
+Z_SHIFT		    	        0       mm		       Detector z shift for optimization purposes
+ANGLE		    	        0       deg		       Detector angle. For AGATA should be 180-prisma_angle
+Y_SHIFT		    	        0       mm		       Detector y shift for optimization purposes
+GAMMA_E_MAX	    	        4000    keV		       Maximum gamma energy in histograms
+THETA_Y		    	        0       deg		       Detector rotation on the vertical plane for optimization purposes
+PHI		    	        0       deg		       Detector phi rotation for optimization purposes
+THETA_X		    	        0       deg		       Detector rotation on the horizontal plane for optimization purposes
+ENABLE_TREE	                NO      #	       	       Ebable or disable detector TTree to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		       Ebable or disable detector histos to save memory
+LUT				#		                Lookup table path
+BETA_AVG			0 0 0	#			Average Doppler correction for detector
+SPECTRA_TYPE			TRACKED					Spectra type: SEGMENT, CORE, CORE1, ADDBACK, TRACKED
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+PRISMA_CONF
+AQ_NBINS			1000	#			Number of bins in A over Q plots 
+DE_TYPE				1	#			DE variable used for Z gates: 0 -> DE_AB, 1 -> DE_A, 2 -> RANGE
+COINC_W_RIGHT			0	#			Time window right with with the same type of det
+COINC_W_LEFT			-1	#			Time window left with the same type of det
+COINC_W_LEFT_LEFT_BKG		0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG		0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_RIGHT_BKG		0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG		0	#			Right Background time window on the right side of the coincidence peak
+FP_HALF_HEIGHT			65	mm			Half height of focal plane
+OUT_DIPOLE_ANGLE		125	deg			Angle of dipole in degrees
+IN_DIPOLE_ANGLE			20	deg			Angle of dipole in degrees
+DIPOLE_RADIUS			1200	mm			Radius of dipole
+B_DIPOLE			0.64116	tesla			Magnetic field of dipole
+B_QUADRUPOLE			0.56293	tesla			Magnetic field of quadrupole
+GEOM_RADIUS			150	mm			Geometrical radius of quadrupole
+Y_SCALE			1	#			Scale of Y of MCP
+MCP_THETA_X			0	deg			Intrinsic rotation around X axis of MCP
+FP_SHIFT_Z			0	mm			Focal plane Z shift in mm
+BETA_AVG_PHI			180	deg			Average beta phi Doppler correction for detector
+FP_SHIFT_Y			0	mm			Focal plane Y shift in mm
+TOF_GAIN			1	#			Gain for recalibration of TOF
+FP_TOLERANCE			1	mm			Tolerance of focal plane
+TARGET_SHIFT_X			0	mm			Target X shift in mm
+TIME_UNIT			10	ns			Timestamp unit, should 10*ns
+X_SCALE			1	#			Scale of X of MCP
+THETA_Y			0	deg			Detector rotation on the vertical plane for optimization purposes
+TRAJ_ANGULAR_TOLERANCE			1.3	deg			Angular tolerance of trajectory
+BETA_AVG_MAG			0.1	#			Average beta magnitude Doppler correction for detector
+BETA_AVG_THETA			20	deg			Average beta theta Doppler correction for detector
+DIPOLE_HEIGHT			200	mm			Height of dipole
+Z_SHIFT			0	mm			Detector z shift for optimization purposes
+ANGLE			50	deg			Detector angle. For AGATA should be 180-prisma_angle
+PHI			0	deg			Detector phi rotation for optimization purposes
+X_SHIFT			0	mm			Detector x shift for optimization purposes
+MAX_EX_ENE			100	#			Maximum Total Excitation energy in histograms
+TOF_OFFSET			0	ns			Offset for recalibration of TOF
+FP_HALF_LENGTH			500	mm			Half length of focal plane
+CFD_UNIT			0	ns			Cfd units
+MAX_AOVERQ			5	#			Maximum value of a over q in histograms
+TARGET_MCP_DISTANCE			250	mm			Distance from target to MCP
+FP_SHIFT_X			0	mm			Focal plane X shift in mm
+THETA_X			0	deg			Detector rotation on the horizontal plane for optimization purposes
+TAC_GAIN                       	0.0104384                      # Gain for prisma tac    
+TAC_OFFSET                      6.33612 ns                   # Offset for prisma tac  
+MAX_IC_dENE			7000	#			Maximum IC energy of deltaE in histograms
+MAX_IC_ENE			10000	#			Maximum IC energy in histograms
+DIPOLE_FP_DISTANCE			3285	mm			Distance from dipole to focal plane
+MIN_AOVERQ			1	#			Minimum value of a over q in histograms
+MIN_EX_ENE			-100	#			Minimum Total Excitation energy in histograms
+TARGET_SHIFT_Y			0	mm			Target Y shift in mm
+TARGET_SHIFT_Z			0	mm			Target Z shift in mm
+TARGET_DIPOLE_DISTANCE			1600	mm			Distance from target to dipole
+MCP_ANGLE			135	deg			MCP angle in degrees
+TARGET_QUAD_DISTANCE			470	mm			Distance from target to quadrupole
+Y_SHIFT			0	mm			Detector y shift for optimization purposes
+QUAD_LENGTH			400	mm			Length of quadrupole
+QUAD_RADIUS			160	mm			Radius of quadrupole
+ENABLE_MAPPING			NO	#		Enable trajectory reconstruction with mapping
+ENABLE_HISTS			YES	#		Ebable or disable detector histos to save memory
+RAW_HISTS			YES	#		Enable raw histos
+PRISMAFILTER_TKEL			NO	#		Use prismafilter TKEL instead of internal calculations
+ENABLE_TREE			NO	#		Ebable or disable detector TTree to save memory (strongly encouraged)
+ENABLE_TRAJPLOT			NO	#		Enable trajectory plot
+AOVERQ_HISTS			YES	#		Enable A over Q histos
+ANA_HISTS			YES	#		Enable ana histos
+REQUIRE_MCPOK			YES	#		Require mcp ok in analysis
+MISC_HISTS			YES	#		Enable misc histos
+AOVERQ_TEVO_HISTS			NO	#		Enable time evolution A over Q histos
+REQUIRE_TOFOK			YES	#		Require time of flight ok in analysis
+REQUIRE_TRAJOK			NO	#		Require trajectory ok in analysis
+REQUIRE_SIDEOK			YES	#		Require ionization chamber side ok in analysis
+REQUIRE_ICOK			YES	#		Require ionization chamber ok in analysis
+ENABLE_REFTREE			NO	#		Enable preprocess reference tree filling. For tuning reconstruction parameters
+ENABLE_PREPROTREE			NO	#		Enable preprocess tree filling, similar to the output of the prismafilters
+A_RANGE			10 40	#			A for plots: min max
+Z_RANGE			0 20	#			Z for plots: min max
+BROKEN_PPAC_CHANNELS			9 0	#		Broken MWPPAC segments: 1 -> broken, 0-> not broken
+BROKEN_IC_CHANNELS			2 1	#		Broken ionization channel segments: 1 -> broken, 0-> not broken
+LUT				#		Lookup table path
+PRISMA_FILE_PATTERN			Tree_	#		Prisma input file pattern (for --update_prisma option only)
+MAPPING_FILE			Prisma/mapping.dat	#		File with mapping for trajectory reconstruction
+TOF_FILE			Prisma/PrismaTOF.dat	#		File with TOF offsets for each section
+PRISMA_DIR_PATTERN			run_	#		Prisma directory pattern (for --update_prisma option only)
+TOF_REF_FILE			Prisma/PrismaRefTOF.dat	#		File with reference TOF offsets for each section for automatic TOF alignment
+PRISMA_IN_PATH			./PrismaData	#		Prisma input path (for --update_prisma option only)
+AQ_PLOTS			13 9 13	#			A/Q conf for histos. Z qmin qmax
+AQ_PLOTS			12 8 12	#			A/Q conf for histos. Z qmin qmax
+AQ_PLOTS			11 8 11	#			A/Q conf for histos. Z qmin qmax
+AQ_PLOTS			10 8 10	#			A/Q conf for histos. Z qmin qmax
+AQ_PLOTS			9 7 9	#			A/Q conf for histos. Z qmin qmax
+ANALYSIS_STAGES			BOTH	#			Analysis stages: PREPROCESS, HIGHLEVEL, BOTH
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+AGATAPRISMA_CONF
+COINC_W_RIGHT			0	#			Time window right
+COINC_W_LEFT			0	#			Time window left
+BP_FRAGMENT_POSITION			MID_TARGET					Doppler correction position for binary partner
+FRAGMENT_POSITION			MID_TARGET					Doppler correction position for detected ion
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+USER_CONF
+EXAMPLE			0	mm			Example of configuration value
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+OPTIMIZER_CONF
+TAIL			0	#			0: notail, 1: right, 2: left, 3: left+right, 4: symmetric
+BKG_POL_ORDER			1	#			Polynomial order for background
+MAX_CALLS			1000	#			Maximum number of minimizer calls
+PRINT_LEVEL			1	#			Minimizer verbosity
+NON_CONVERGENCE_COST			5	#			Multiplier cost for fits that did not converge
+SIGMA_WEIGHT			0.5	#			Figure of merit weight on sigma. 0 means only the centroid is optimized, 1 means only the sigma, values in between are a combination
+TOLERANCE			0.1	#			Minimizer tolerance
+PRECISION			0.01	#			Minimizer precision (likely leave 0 for optimally calculated value)
+VALID_ERRORS			NO	#		Performs error analysis (e.g. run Hesse for Minuit)
+USE_INTERVALS			NO	#		Use intervals in minimization (try what is best)
+ALGORITHM			Simplex	#		Name of algorithm (Migraad, Simplex,...) see: tutorials/fit/NumericalMinimization.C.html
+MINIMIZER			Minuit	#		Name of minimizer (Minuit/Minuit2, Fumili, GLSMultiMin, Genetic)
+FIT_PAR_FILE			parameters.dat	#		Name of parameter file for fitter
+ROOT_FILE			out.root	#		Name optimizer output file
+LOG_FILE			log.txt	#		Name of log file for minimizer

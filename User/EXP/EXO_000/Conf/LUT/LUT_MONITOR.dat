@@ -1,0 +1,12 @@
+####### SPIDER ######
+#
+# the "map" number conversion into detector and strip:
+# strip = (map % 10) + 1
+# detector = (map / 10) + 1
+#
+# Board	channel map 	name	thr_lo	thr_hi	posx    poy poz	TimeOffset	ncalpar	calpars	
+0	    0	    0 	    nnn	    5.00	200.00	0   0   0	0	2	 0  1
+0	    1	    1	    nnn	    5.00	200.00	0   0   0	0	2	 0  1
+0	    2	    2 	    nnn	    5.00	200.00	0   0   0   0	2	 0  1
+0	    3	    3 	    nnn	    5.00	200.00	0   0   0	0	2	 0  1
+0	    4	    4 	    nnn	    5.00	200.00	0   0   0	0	2	 0  1

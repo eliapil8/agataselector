@@ -1,0 +1,1 @@
+g++ fix.C `root-config --cflags --libs` -O3 -o fix

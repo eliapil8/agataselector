@@ -1,0 +1,13 @@
+if(BUILD_SCRIPTS)
+  file(GLOB scripts_list LIST_DIRECTORIES true *)
+  foreach(dir ${scripts_list})
+      if(IS_DIRECTORY ${dir}) 
+  	if (EXISTS "${dir}/CMakeLists.txt")
+          message("Compiling script: ${dir}")
+      		add_subdirectory(${dir})
+      	endif()
+      endif()
+  endforeach()
+endif()
+
+file(COPY "selector.sh" DESTINATION "${CMAKE_BINARY_DIR}/Scripts")

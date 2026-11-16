@@ -1,0 +1,9 @@
+#Calibration file
+id 0 0  thr 160.  4000.
+id 0 1  thr 160.  4000.
+id 1 0  thr 160.  4000.
+id 1 1  thr 180.  4000.
+id 2 0  thr 380.  4000.
+id 2 1  thr 140.  4000.
+id 3 0  thr 130.  4000.
+id 3 1  thr 160.  4000.

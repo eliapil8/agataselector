@@ -1,0 +1,3 @@
+[submodule "banana-editor"]
+	path = banana-editor
+	url = https://github.com/matLogh/banana-editor.git

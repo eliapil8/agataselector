@@ -1,0 +1,39 @@
+# PPAC position threshold file cms 2024, experiment 22.096
+# X_right, denoted by the first value, id, being equal to 0. Second value is segment number
+id 0 0 thr 2300. 3690.
+id 0 1 thr 1359. 2880.
+id 0 2 thr 1262. 2760.
+id 0 3 thr 1273. 2728.
+id 0 4 thr 1480. 3001.
+id 0 5 thr 1300. 2700.
+id 0 6 thr 1375. 2860.
+id 0 7 thr 1280. 2711.
+id 0 8 thr 1499. 3025.
+id 0 9 thr 1379. 2869.
+# X_left, denoted by id num = 1
+id 1 0 thr 1490. 2800.
+id 1 1 thr 1073. 2663.
+id 1 2 thr 1153. 2654.
+id 1 3 thr 1220. 2649.
+id 1 4 thr 1494. 2987.
+id 1 5 thr 1244. 2720.
+id 1 6 thr 1293. 2850.
+id 1 7 thr 1390. 2841.
+id 1 8 thr 1483. 2990.
+id 1 9 thr 1511. 3015.
+# XCathode, denoted by id num = 2
+id 2 0 thr 100. 3950.
+id 2 1 thr 100. 3950.
+id 2 2 thr 100. 3950.
+id 2 3 thr 100. 3950.
+id 2 4 thr 100. 3950.
+id 2 5 thr 100. 3950.
+id 2 6 thr 100. 3950.
+id 2 7 thr 100. 3950.
+id 2 8 thr 100. 3950.
+id 2 9 thr 100. 3950.
+# YUp YDown, denoted by id = 3
+# YUp
+id 3 0 thr 1 4090
+# YDown
+id 3 1 thr 1 4090  

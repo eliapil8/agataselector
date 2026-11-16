@@ -1,0 +1,38 @@
+#PPAC position threshold file 
+# Xright
+id 0 0 thr 2192 3701
+id 0 1 thr 1355 2872
+id 0 2 thr 1272 2739
+id 0 3 thr 1272 2764
+id 0 4 thr 1325 2824
+id 0 5 thr 1199 2664
+id 0 6 thr 1363 2833
+id 0 7 thr 1295 2661
+id 0 8 thr 1494 3033
+id 0 9 thr 1358 2866
+# Xleft
+id 1 0 thr 1366 2896
+id 1 1 thr 1079 2669
+id 1 2 thr 1164 2650
+id 1 3 thr 1133 2646
+id 1 4 thr 1303 2790
+id 1 5 thr 1255 2777
+id 1 6 thr 1299 2833
+id 1 7 thr 1390 2757
+id 1 8 thr 1495 3010
+id 1 9 thr 1508 3028
+# XCathode
+id 2 0 thr 500. 3500.
+id 2 1 thr 500. 3500.
+id 2 2 thr 500. 3500.
+id 2 3 thr 500. 3500.
+id 2 4 thr 500. 3500.
+id 2 5 thr 500. 3500.
+id 2 6 thr 500. 3500.
+id 2 7 thr 500. 2442.
+id 2 8 thr 500. 3500.
+id 2 9 thr 500. 3500.
+# YUp
+id 3 0 thr 1 4090
+# YDown
+id 3 1 thr 1 4090

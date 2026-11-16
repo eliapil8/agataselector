@@ -1,0 +1,108 @@
+#window: width of the time window used for the event building (in ns)
+window 500
+
+#boardDef:
+# arg 1: boardId
+# arg 2 :boardVersion(V1725/V1730==1 - VX2740 ==2)
+# arg 3 :number of channels
+# arg 4: FWVersion (PHA or PSD)
+# arg 5: ns per timestamp
+# arg 6: ns per sample
+# arg 7: data key: 0xFA0201A2 = SPIDER ; LABR = 0xFA0201A5 ; DANTE = 0x
+boardDef 0 1 16 PSD 2 2 labr
+boardDef 1 2 64 PHA 8 8 spider
+boardDef 5 1 16 PHA 4 4 dante
+
+
+#minFold:
+# arg 1: minFold for this detector
+# arg 2: keep only events if coincidence with other board
+minFold 2 0
+minFold 1 0
+minFold 1 0
+
+
+# board   channel   timeOffset
+tsoffset   0   0      121
+tsoffset   0   1      121
+tsoffset   0   2      121
+tsoffset   0   3      121
+tsoffset   0   4      121
+tsoffset   0   5      121
+tsoffset   0   6      121
+tsoffset   0   7      121
+tsoffset   0   8      121
+
+tsoffset   1   0       72
+tsoffset   1   1       72
+tsoffset   1   2       72
+tsoffset   1   3       72
+tsoffset   1   4       72
+tsoffset   1   5       72
+tsoffset   1   6       72
+tsoffset   1   7       72
+tsoffset   1   8       72
+tsoffset   1   9       72
+tsoffset   1  10       72
+tsoffset   1  11       72
+tsoffset   1  12       72
+tsoffset   1  13       72
+tsoffset   1  14       72
+tsoffset   1  15       72
+tsoffset   1  16       72
+tsoffset   1  17       72
+tsoffset   1  18       72
+tsoffset   1  19       72
+tsoffset   1  20       72
+tsoffset   1  21       72
+tsoffset   1  22       72
+tsoffset   1  23       72
+tsoffset   1  24       72
+tsoffset   1  25       72
+tsoffset   1  26       72
+tsoffset   1  27       72
+tsoffset   1  28       72
+tsoffset   1  29       72
+tsoffset   1  30       72
+tsoffset   1  31       72
+tsoffset   1  32       72
+tsoffset   1  33       72
+tsoffset   1  34       72
+tsoffset   1  35       72
+tsoffset   1  36       72
+tsoffset   1  37       72
+tsoffset   1  38       72
+tsoffset   1  39       72
+tsoffset   1  40       72
+tsoffset   1  41       72
+tsoffset   1  42       72
+tsoffset   1  43       72
+tsoffset   1  44       72
+tsoffset   1  45       72
+tsoffset   1  46       72
+tsoffset   1  47       72
+tsoffset   1  48       72
+tsoffset   1  49       72
+tsoffset   1  50       72
+tsoffset   1  51       72
+tsoffset   1  52       72
+tsoffset   1  53       72
+tsoffset   1  54       72
+tsoffset   1  55       72
+tsoffset   1  56       72
+tsoffset   1  57       72
+tsoffset   1  58       72
+tsoffset   1  59       72
+tsoffset   1  60       72
+tsoffset   1  61       72
+tsoffset   1  62       72
+tsoffset   1  63       72
+
+tsoffset   5   0       50
+tsoffset   5   1       50
+tsoffset   5   2      100
+tsoffset   5   4       50
+tsoffset   5   5       50
+tsoffset   5   6      100
+tsoffset   5   8       50
+

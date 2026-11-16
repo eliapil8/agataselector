@@ -1,0 +1,78 @@
+=============== it: 0 =================
+par: PRISMA_CONF BETA_OFFSET ---> val: 0.00237
+COST 3.76014
+FITTED MEAN 1170.52
+FITTED SIGMA 3.19789
+--------------- it: 0 -----------------
+=============== it: 1 =================
+par: PRISMA_CONF BETA_OFFSET ---> val: 0.00335569
+COST 3.76014
+FITTED MEAN 1170.52
+FITTED SIGMA 3.19789
+--------------- it: 1 -----------------
+=============== it: 2 =================
+par: PRISMA_CONF BETA_OFFSET ---> val: 0.0019681
+COST 3.76014
+FITTED MEAN 1170.52
+FITTED SIGMA 3.19789
+--------------- it: 2 -----------------
+=============== it: 3 =================
+par: PRISMA_CONF BETA_OFFSET ---> val: 0.00252967
+COST 3.76014
+FITTED MEAN 1170.52
+FITTED SIGMA 3.19789
+--------------- it: 3 -----------------
+=============== it: 4 =================
+par: PRISMA_CONF BETA_OFFSET ---> val: 0.00220969
+COST 3.76014
+FITTED MEAN 1170.52
+FITTED SIGMA 3.19789
+--------------- it: 4 -----------------
+=============== it: 5 =================
+par: PRISMA_CONF BETA_OFFSET ---> val: 0.00244992
+COST 3.76014
+FITTED MEAN 1170.52
+FITTED SIGMA 3.19789
+--------------- it: 5 -----------------
+=============== it: 6 =================
+par: PRISMA_CONF BETA_OFFSET ---> val: 0.00228992
+COST 3.76014
+FITTED MEAN 1170.52
+FITTED SIGMA 3.19789
+--------------- it: 6 -----------------
+=============== it: 7 =================
+par: PRISMA_CONF BETA_OFFSET ---> val: 0.00240998
+COST 3.76014
+FITTED MEAN 1170.52
+FITTED SIGMA 3.19789
+--------------- it: 7 -----------------
+=============== it: 8 =================
+par: PRISMA_CONF BETA_OFFSET ---> val: 0.00237
+COST 3.76014
+FITTED MEAN 1170.52
+FITTED SIGMA 3.19789
+--------------- it: 8 -----------------
+=============== it: 9 =================
+par: PRISMA_CONF BETA_OFFSET ---> val: 0.00237
+COST 3.76014
+FITTED MEAN 1170.52
+FITTED SIGMA 3.19789
+--------------- it: 9 -----------------
+=============== it: 10 =================
+par: PRISMA_CONF BETA_OFFSET ---> val: 0.00247008
+COST 3.76014
+FITTED MEAN 1170.52
+FITTED SIGMA 3.19789
+--------------- it: 10 -----------------
+=============== it: 11 =================
+par: PRISMA_CONF BETA_OFFSET ---> val: 0.00226967
+COST 3.76014
+FITTED MEAN 1170.52
+FITTED SIGMA 3.19789
+--------------- it: 11 -----------------
+=============== it: 12 =================
+par: PRISMA_CONF BETA_OFFSET ---> val: 0.00335772
+COST 3.76014
+FITTED MEAN 1170.52
+FITTED SIGMA 3.19789
+--------------- it: 12 -----------------

@@ -1,0 +1,60 @@
+####### OSCAR ######
+#
+# the "map" number (ABC) conversion into detector, layer and segment:
+#   A = detector ( 0 = Up, 1 = Down)
+#   BC / 50 = layer (0 = DeltaE, 1 = Eres)
+#   BC % 50 = segment
+#
+#   Delta E:
+#   -----------------
+#   | | | | | ... | |
+#   | | | | | ... | |
+#   | | | | | ... | |
+#   | | | | | ... | |
+#   -----------------
+#    0 1 2 3  ... 15
+#
+#   E residual
+#   ---------------------
+#   |  0 |  1 |  2 |  3 |
+#   ---------------------
+#   |  4 |  5 |  6 |  7 |
+#   ---------------------
+#   |  8 |  9 | 10 | 11 |
+#   ---------------------
+#   | 12 | 13 | 14 | 15 |
+#   ---------------------
+#
+# Board	channel map 	name	thr_lo	thr_hi	x(mm)	y(mm)	TimeOffset	ncalpar	calpars
+0	0	000	DOWN_BLACK_DE_CH00	0.2	100	24.375	0	0	2	0	0.001
+0	1	001	DOWN_BLACK_DE_CH01	0.2	100	21.125	0	0	2	0	0.001
+0	2	002	DOWN_BLACK_DE_CH02	0.2	100	17.875	0	0	2	0	0.001
+0	3	003	DOWN_BLACK_DE_CH03	0.2	100	14.625	0	0	2	0	0.001
+0	4	004	DOWN_BLACK_DE_CH04	0.2	100	11.375	0	0	2	0	0.001
+0	5	005	DOWN_BLACK_DE_CH05	0.2	100	8.125	0	0	2	0	0.001
+0	6	006	DOWN_BLACK_DE_CH06	0.2	100	4.875	0	0	2	0	0.001
+0	7	007	DOWN_BLACK_DE_CH07	0.2	100	1.625	0	0	2	0	0.001
+0	8	008	DOWN_BLACK_DE_CH08	0.2	100	-1.625	0	0	2	0	0.001
+0	9	009	DOWN_BLACK_DE_CH09	0.2	100	-4.875	0	0	2	0	0.001
+0	10	010	DOWN_BLACK_DE_CH10	0.2	100	-8.125	0	0	2	0	0.001
+0	11	011	DOWN_BLACK_DE_CH11	0.2	100	-11.375	0	0	2	0	0.001
+0	12	012	DOWN_BLACK_DE_CH12	0.2	100	-14.625	0	0	2	0	0.001
+0	13	013	DOWN_BLACK_DE_CH13	0.2	100	-17.875	0	0	2	0	0.001
+0	14	014	DOWN_BLACK_DE_CH14	0.2	100	-21.125	0	0	2	0	0.001
+0	15	015	DOWN_BLACK_DE_CH15	0.2	100	-24.375	0	0	2	0	0.001
+0	50	050	DOWN_BLACK_ERES_CH00	0.2	100	19.2	21	0	2	0	0.001
+0	51	051	DOWN_BLACK_ERES_CH01	0.2	100	6.4	21	0	2	0	0.001
+0	52	052	DOWN_BLACK_ERES_CH02	0.2	100	-6.4	21	0	2	0	0.001
+0	53	053	DOWN_BLACK_ERES_CH03	0.2	100	-19.2	21	0	2	0	0.001
+0	54	054	DOWN_BLACK_ERES_CH04	0.2	100	19.2	6.4	0	2	0	0.001
+0	55	055	DOWN_BLACK_ERES_CH05	0.2	100	6.4	6.4	0	2	0	0.001
+0	56	056	DOWN_BLACK_ERES_CH06	0.2	100	-6.4	6.4	0	2	0	0.001
+0	57	057	DOWN_BLACK_ERES_CH07	0.2	100	-19.2	6.4	0	2	0	0.001
+0	58	058	DOWN_BLACK_ERES_CH08	0.2	100	19.2	-6.4	0	2	0	0.001
+0	59	059	DOWN_BLACK_ERES_CH09	0.2	100	6.4	-6.4	0	2	0	0.001
+0	60	060	DOWN_BLACK_ERES_CH10	0.2	100	-6.4	-6.4	0	2	0	0.001
+0	61	061	DOWN_BLACK_ERES_CH11	0.2	100	-19.2	-6.4	0	2	0	0.001
+0	62	062	DOWN_BLACK_ERES_CH12	0.2	100	19.2	-21	0	2	0	0.001
+0	63	063	DOWN_BLACK_ERES_CH13	0.2	100	6.4	-21	0	2	0	0.001
+0	64	064	DOWN_BLACK_ERES_CH14	0.2	100	-6.4	-21	0	2	0	0.001
+0	65	065	DOWN_BLACK_ERES_CH15	0.2	100	-19.2	-21	0	2	0	0.001

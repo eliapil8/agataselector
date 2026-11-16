@@ -1,0 +1,172 @@
+##################Start of minimizer###################
+##################End of minimizer#####################
+##################Scan of TARGET_CONF of TILT
+=============== it: 0 =================
+par: TARGET_CONF TILT ---> val: 0
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 3.00726
+FITTED MEAN 1435.2
+FITTED SIGMA 4.81223
+=============== it: 1 =================
+par: TARGET_CONF TILT ---> val: -0.174533
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 2.99287
+FITTED MEAN 1435.24
+FITTED SIGMA 4.74106
+=============== it: 2 =================
+par: TARGET_CONF TILT ---> val: -0.15708
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 2.95588
+FITTED MEAN 1435.21
+FITTED SIGMA 4.70542
+=============== it: 3 =================
+par: TARGET_CONF TILT ---> val: -0.139626
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 2.99242
+FITTED MEAN 1435.23
+FITTED SIGMA 4.75944
+=============== it: 4 =================
+par: TARGET_CONF TILT ---> val: -0.122173
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 3.00096
+FITTED MEAN 1435.23
+FITTED SIGMA 4.77365
+=============== it: 5 =================
+par: TARGET_CONF TILT ---> val: -0.10472
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 2.92937
+FITTED MEAN 1435.14
+FITTED SIGMA 4.71487
+=============== it: 6 =================
+par: TARGET_CONF TILT ---> val: -0.0872665
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 2.93793
+FITTED MEAN 1435.15
+FITTED SIGMA 4.72544
+=============== it: 7 =================
+par: TARGET_CONF TILT ---> val: -0.0698132
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 3.0185
+FITTED MEAN 1435.23
+FITTED SIGMA 4.81164
+=============== it: 8 =================
+par: TARGET_CONF TILT ---> val: -0.0523599
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 2.95742
+FITTED MEAN 1435.13
+FITTED SIGMA 4.78339
+=============== it: 9 =================
+par: TARGET_CONF TILT ---> val: -0.0349066
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 2.96974
+FITTED MEAN 1435.19
+FITTED SIGMA 4.75163
+=============== it: 10 =================
+par: TARGET_CONF TILT ---> val: -0.0174533
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 3.01334
+FITTED MEAN 1435.2
+FITTED SIGMA 4.82189
+=============== it: 11 =================
+par: TARGET_CONF TILT ---> val: -2.08167e-17
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 2.96685
+FITTED MEAN 1435.16
+FITTED SIGMA 4.77612
+=============== it: 12 =================
+par: TARGET_CONF TILT ---> val: 0.0174533
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 2.99239
+FITTED MEAN 1435.18
+FITTED SIGMA 4.80684
+=============== it: 13 =================
+par: TARGET_CONF TILT ---> val: 0.0349066
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 2.96645
+FITTED MEAN 1435.15
+FITTED SIGMA 4.78325
+=============== it: 14 =================
+par: TARGET_CONF TILT ---> val: 0.0523599
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 2.94934
+FITTED MEAN 1435.12
+FITTED SIGMA 4.7773
+=============== it: 15 =================
+par: TARGET_CONF TILT ---> val: 0.0698132
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 2.97608
+FITTED MEAN 1435.14
+FITTED SIGMA 4.81625
+=============== it: 16 =================
+par: TARGET_CONF TILT ---> val: 0.0872665
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 3.00157
+FITTED MEAN 1435.15
+FITTED SIGMA 4.85407
+=============== it: 17 =================
+par: TARGET_CONF TILT ---> val: 0.10472
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 3.00746
+FITTED MEAN 1435.14
+FITTED SIGMA 4.87203
+=============== it: 18 =================
+par: TARGET_CONF TILT ---> val: 0.122173
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 3.00267
+FITTED MEAN 1435.12
+FITTED SIGMA 4.88484
+=============== it: 19 =================
+par: TARGET_CONF TILT ---> val: 0.139626
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 2.98398
+FITTED MEAN 1435.11
+FITTED SIGMA 4.85535
+=============== it: 20 =================
+par: TARGET_CONF TILT ---> val: 0.15708
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 2.91382
+FITTED MEAN 1435.04
+FITTED SIGMA 4.78825
+=============== it: 21 =================
+par: TARGET_CONF TILT ---> val: 0.174533
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 2.9632
+FITTED MEAN 1435.04
+FITTED SIGMA 4.88237
+##################Scan of SPIDER_CONF of E_GAIN
+=============== it: 22 =================
+par: TARGET_CONF TILT ---> val: 0
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 2.96685
+FITTED MEAN 1435.16
+FITTED SIGMA 4.77612
+=============== it: 23 =================
+par: TARGET_CONF TILT ---> val: 0
+par: SPIDER_CONF E_GAIN ---> val: 0.9
+COST 2.98022
+FITTED MEAN 1435.22
+FITTED SIGMA 4.73684
+=============== it: 24 =================
+par: TARGET_CONF TILT ---> val: 0
+par: SPIDER_CONF E_GAIN ---> val: 0.95
+COST 3.04257
+FITTED MEAN 1435.23
+FITTED SIGMA 4.85112
+=============== it: 25 =================
+par: TARGET_CONF TILT ---> val: 0
+par: SPIDER_CONF E_GAIN ---> val: 1
+COST 2.96685
+FITTED MEAN 1435.16
+FITTED SIGMA 4.77612
+=============== it: 26 =================
+par: TARGET_CONF TILT ---> val: 0
+par: SPIDER_CONF E_GAIN ---> val: 1.05
+COST 3.07601
+FITTED MEAN 1435.2
+FITTED SIGMA 4.95395
+=============== it: 27 =================
+par: TARGET_CONF TILT ---> val: 0
+par: SPIDER_CONF E_GAIN ---> val: 1.1
+COST 3.33618
+FITTED MEAN 1435.22
+FITTED SIGMA 5.45368

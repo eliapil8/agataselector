@@ -1,0 +1,214 @@
+##################Start of minimizer###################
+=============== it: 0 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 6.4e-07
+COST 0.0393708
+FITTED MEAN 3.18877
+FITTED SIGMA 0.0399677
+=============== it: 1 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 7.04e-07
+COST 0.110679
+FITTED MEAN 3.3549
+FITTED SIGMA 0.0164557
+=============== it: 2 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 6.144e-07
+COST 0.0621783
+FITTED MEAN 3.04444
+FITTED SIGMA 0.0187939
+=============== it: 3 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 6.5024e-07
+COST 0.0211918
+FITTED MEAN 3.14762
+FITTED SIGMA 0.04
+=============== it: 4 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 6.8096e-07
+COST 0.0424989
+FITTED MEAN 3.195
+FITTED SIGMA 0.04
+=============== it: 5 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 6.5024e-07
+COST 0.0211927
+FITTED MEAN 3.14761
+FITTED SIGMA 0.04
+##################End of minimizer#####################
+##################Scan of PRISMA_CONF of B_DIPOLE
+=============== it: 6 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 6.4e-07
+COST 0.0484141
+FITTED MEAN 3.09304
+FITTED SIGMA 0.0398666
+=============== it: 7 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 5.4e-07
+COST 0.267575
+FITTED MEAN 2.65484
+FITTED SIGMA 0.0399911
+=============== it: 8 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 5.4303e-07
+COST 0.325883
+FITTED MEAN 2.53813
+FITTED SIGMA 0.039892
+=============== it: 9 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 5.46061e-07
+COST 0.320839
+FITTED MEAN 2.54827
+FITTED SIGMA 0.039945
+=============== it: 10 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 5.49091e-07
+COST 0.268214
+FITTED MEAN 2.65131
+FITTED SIGMA 0.0377425
+=============== it: 11 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 5.52121e-07
+COST 0.303033
+FITTED MEAN 2.58393
+FITTED SIGMA 0.04
+=============== it: 12 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 5.55152e-07
+COST 0.292366
+FITTED MEAN 2.6051
+FITTED SIGMA 0.0398323
+=============== it: 13 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 5.58182e-07
+COST 0.287782
+FITTED MEAN 2.61444
+FITTED SIGMA 0.04
+=============== it: 14 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 5.61212e-07
+COST 0.280732
+FITTED MEAN 2.62854
+FITTED SIGMA 0.04
+=============== it: 15 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 5.64242e-07
+COST 0.272775
+FITTED MEAN 2.64435
+FITTED SIGMA 0.0399054
+=============== it: 16 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 5.67273e-07
+COST 0.259301
+FITTED MEAN 2.67135
+FITTED SIGMA 0.039957
+=============== it: 17 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 5.70303e-07
+COST 0.259379
+FITTED MEAN 2.67124
+FITTED SIGMA 0.0399996
+=============== it: 18 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 5.73333e-07
+COST 0.0700023
+FITTED MEAN 3.04902
+FITTED SIGMA 0.0390276
+=============== it: 19 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 5.76364e-07
+COST 0.245137
+FITTED MEAN 2.69973
+FITTED SIGMA 0.04
+=============== it: 20 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 5.79394e-07
+COST 0.195373
+FITTED MEAN 2.79925
+FITTED SIGMA 0.0399928
+=============== it: 21 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 5.82424e-07
+COST 0.188698
+FITTED MEAN 2.8126
+FITTED SIGMA 0.04
+=============== it: 22 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 5.85455e-07
+COST 0.139489
+FITTED MEAN 2.89048
+FITTED SIGMA 0.0194557
+=============== it: 23 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 5.88485e-07
+COST 0.0636452
+FITTED MEAN 3.04321
+FITTED SIGMA 0.0205006
+=============== it: 24 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 5.91515e-07
+COST 0.127394
+FITTED MEAN 2.91834
+FITTED SIGMA 0.0231308
+=============== it: 25 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 5.94545e-07
+COST 0.0629416
+FITTED MEAN 3.05497
+FITTED SIGMA 0.0308509
+=============== it: 26 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 5.97576e-07
+COST 0.194849
+FITTED MEAN 2.8003
+FITTED SIGMA 0.0399952
+=============== it: 27 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 6.00606e-07
+COST 0.084074
+FITTED MEAN 2.99959
+FITTED SIGMA 0.0177372
+=============== it: 28 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 6.03636e-07
+COST 0.195292
+FITTED MEAN 2.79348
+FITTED SIGMA 0.0340651
+=============== it: 29 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 6.06667e-07
+COST 0.174665
+FITTED MEAN 3.46962
+FITTED SIGMA 0.0297063
+=============== it: 30 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 6.09697e-07
+COST 0.122022
+FITTED MEAN 2.94595
+FITTED SIGMA 0.0399918
+=============== it: 31 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 6.12727e-07
+COST 0.070293
+FITTED MEAN 3.02714
+FITTED SIGMA 0.0177235
+=============== it: 32 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 6.15758e-07
+COST 0.103826
+FITTED MEAN 2.98231
+FITTED SIGMA 0.0399592
+=============== it: 33 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 6.18788e-07
+COST 0.0987555
+FITTED MEAN 2.99249
+FITTED SIGMA 0.0399985
+=============== it: 34 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 6.21818e-07
+COST 0.0481174
+FITTED MEAN 3.08787
+FITTED SIGMA 0.0341092
+=============== it: 35 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 6.24848e-07
+COST 0.0843174
+FITTED MEAN 3.02136
+FITTED SIGMA 0.0399984
+=============== it: 36 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 6.27879e-07
+COST 0.0770712
+FITTED MEAN 3.03577
+FITTED SIGMA 0.0399138
+=============== it: 37 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 6.30909e-07
+COST 0.11641
+FITTED MEAN 2.95718
+FITTED SIGMA 0.04
+=============== it: 38 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 6.33939e-07
+COST 0.06122
+FITTED MEAN 3.06756
+FITTED SIGMA 0.04
+=============== it: 39 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 6.3697e-07
+COST 0.00885539
+FITTED MEAN 3.14864
+FITTED SIGMA 0.0163548
+=============== it: 40 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 6.4e-07
+COST 0.0340235
+FITTED MEAN 3.17805
+FITTED SIGMA 0.0399991
+#################Running with optimal parameters
+=============== it: 41 =================
+par: PRISMA_CONF B_DIPOLE ---> val: 6.5024e-07
+COST 0.0211933
+FITTED MEAN 3.14761
+FITTED SIGMA 0.04

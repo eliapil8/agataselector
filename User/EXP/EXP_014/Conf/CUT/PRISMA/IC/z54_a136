@@ -1,0 +1,30 @@
+{
+//========= Macro generated from object: z54_a136/Graph
+//========= by ROOT version6.26/10
+   
+   TCutG *cutg = new TCutG("z54_a136",19);
+   cutg->SetVarX(" E");
+   cutg->SetVarY("total DE_AB ");
+   cutg->SetTitle("Graph");
+   cutg->SetFillStyle(1000);
+   cutg->SetPoint(0,6396.13,5281.25);
+   cutg->SetPoint(1,7053.84,5381.33);
+   cutg->SetPoint(2,7657.15,5385.5);
+   cutg->SetPoint(3,8319.8,5331.29);
+   cutg->SetPoint(4,9659.94,5145.72);
+   cutg->SetPoint(5,9897.31,5208.27);
+   cutg->SetPoint(6,9872.58,5362.56);
+   cutg->SetPoint(7,9373.12,5462.64);
+   cutg->SetPoint(8,8557.17,5521.02);
+   cutg->SetPoint(9,8057.7,5493.91);
+   cutg->SetPoint(10,7854.95,5468.89);
+   cutg->SetPoint(11,7439.56,5470.98);
+   cutg->SetPoint(12,6979.66,5435.53);
+   cutg->SetPoint(13,6524.7,5360.48);
+   cutg->SetPoint(14,6287.34,5308.35);
+   cutg->SetPoint(15,6059.86,5231.21);
+   cutg->SetPoint(16,5975.79,5193.68);
+   cutg->SetPoint(17,6420.86,5285.42);
+   cutg->SetPoint(18,6396.13,5281.25);
+   cutg->Draw("");
+}

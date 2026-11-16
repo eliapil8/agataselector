@@ -1,0 +1,11 @@
+#Calibration file
+#id 84 34    thr 50.5 84.8
+#id 94 38    thr 54.0 101.1
+#id 98 40    thr 57.5 100.5
+#id 110 44    thr 67.0 100.5
+#id 118 48    thr 75.0 97.7
+id 84 34      thr   0   180
+id 94 38      thr   0   180
+id 98 40      thr   0   180
+id 110 44     thr   0  180
+id 118 48     thr   0  180

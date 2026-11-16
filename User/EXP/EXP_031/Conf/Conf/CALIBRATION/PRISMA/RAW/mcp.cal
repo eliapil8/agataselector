@@ -1,0 +1,8 @@
+# MCP position calibration file  cms 2024, experiment 22.096
+# Only calibration is needed (thresholds are set with the 2D gate)
+# X
+#99 0 3  54.0228 -0.0266345      -1.3194e-06
+id 0  cal 54.0228 -0.0266345
+# Y
+# 99 0 2  -65.2333        0.0307625
+id 1  cal -65.2333 0.0307625

@@ -1,0 +1,13 @@
+#ifdef __CINT__
+
+#pragma link off all globals;
+#pragma link off all classes;
+#pragma link off all functions;
+#pragma link         C++ nestedclasses;
+
+#pragma link         C++ defined_in "Fitter.h";
+#pragma link         C++ class Fitter + ;
+#pragma link         C++ class Fitter::InitializationParameters + ;
+#pragma link         C++ class Fitter::InitialState + ;
+
+#endif // __CINT__

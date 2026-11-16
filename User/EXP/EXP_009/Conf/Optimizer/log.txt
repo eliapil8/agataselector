@@ -1,0 +1,143 @@
+##################Start of minimizer###################
+=============== it: 0 =================
+par: PRISMA_CONF FP_SHIFT_X ---> val: 0
+par: PRISMA_CONF FP_SHIFT_Z ---> val: 0
+COST 0.15
+FITTED MEAN 0
+FITTED SIGMA 0.3
+=============== it: 1 =================
+par: PRISMA_CONF FP_SHIFT_X ---> val: 0.00420735
+par: PRISMA_CONF FP_SHIFT_Z ---> val: 0
+COST 0.15
+FITTED MEAN 0
+FITTED SIGMA 0.3
+=============== it: 2 =================
+par: PRISMA_CONF FP_SHIFT_X ---> val: -0.00378401
+par: PRISMA_CONF FP_SHIFT_Z ---> val: 0
+COST 0.15
+FITTED MEAN 0
+FITTED SIGMA 0.3
+=============== it: 3 =================
+par: PRISMA_CONF FP_SHIFT_X ---> val: 0.00210084
+par: PRISMA_CONF FP_SHIFT_Z ---> val: 0
+COST 0.15
+FITTED MEAN 0
+FITTED SIGMA 0.3
+=============== it: 4 =================
+par: PRISMA_CONF FP_SHIFT_X ---> val: 0.00372557
+par: PRISMA_CONF FP_SHIFT_Z ---> val: 0
+COST 0.15
+FITTED MEAN 0
+FITTED SIGMA 0.3
+=============== it: 5 =================
+par: PRISMA_CONF FP_SHIFT_X ---> val: 0.00499408
+par: PRISMA_CONF FP_SHIFT_Z ---> val: 0
+COST 0.15
+FITTED MEAN 0
+FITTED SIGMA 0.3
+=============== it: 6 =================
+par: PRISMA_CONF FP_SHIFT_X ---> val: -0.00206046
+par: PRISMA_CONF FP_SHIFT_Z ---> val: 0
+COST 0.15
+FITTED MEAN 0
+FITTED SIGMA 0.3
+=============== it: 7 =================
+par: PRISMA_CONF FP_SHIFT_X ---> val: -0.00206046
+par: PRISMA_CONF FP_SHIFT_Z ---> val: 0.00420735
+COST 0.15
+FITTED MEAN 0
+FITTED SIGMA 0.3
+=============== it: 8 =================
+par: PRISMA_CONF FP_SHIFT_X ---> val: -0.00206046
+par: PRISMA_CONF FP_SHIFT_Z ---> val: -0.00378401
+COST 0.15
+FITTED MEAN 0
+FITTED SIGMA 0.3
+=============== it: 9 =================
+par: PRISMA_CONF FP_SHIFT_X ---> val: -0.00206046
+par: PRISMA_CONF FP_SHIFT_Z ---> val: 0.00210084
+COST 0.15
+FITTED MEAN 0
+FITTED SIGMA 0.3
+=============== it: 10 =================
+par: PRISMA_CONF FP_SHIFT_X ---> val: -0.00206046
+par: PRISMA_CONF FP_SHIFT_Z ---> val: 0.00372557
+COST 0.15
+FITTED MEAN 0
+FITTED SIGMA 0.3
+=============== it: 11 =================
+par: PRISMA_CONF FP_SHIFT_X ---> val: -0.00206046
+par: PRISMA_CONF FP_SHIFT_Z ---> val: 0.00499408
+COST 0.15
+FITTED MEAN 0
+FITTED SIGMA 0.3
+=============== it: 12 =================
+par: PRISMA_CONF FP_SHIFT_X ---> val: -0.00206046
+par: PRISMA_CONF FP_SHIFT_Z ---> val: -0.00206046
+COST 0.15
+FITTED MEAN 0
+FITTED SIGMA 0.3
+=============== it: 13 =================
+par: PRISMA_CONF FP_SHIFT_X ---> val: -0.00105391
+par: PRISMA_CONF FP_SHIFT_Z ---> val: -0.00105391
+COST 0.15
+FITTED MEAN 0
+FITTED SIGMA 0.3
+##################End of minimizer#####################
+##################Scan of PRISMA_CONF of FP_SHIFT_X
+=============== it: 14 =================
+par: PRISMA_CONF FP_SHIFT_X ---> val: 0
+par: PRISMA_CONF FP_SHIFT_Z ---> val: 0
+COST 0.15
+FITTED MEAN 0
+FITTED SIGMA 0.3
+=============== it: 15 =================
+par: PRISMA_CONF FP_SHIFT_X ---> val: -0.005
+par: PRISMA_CONF FP_SHIFT_Z ---> val: 0
+COST 0.15
+FITTED MEAN 0
+FITTED SIGMA 0.3
+=============== it: 16 =================
+par: PRISMA_CONF FP_SHIFT_X ---> val: 0
+par: PRISMA_CONF FP_SHIFT_Z ---> val: 0
+COST 0.15
+FITTED MEAN 0
+FITTED SIGMA 0.3
+=============== it: 17 =================
+par: PRISMA_CONF FP_SHIFT_X ---> val: 0.005
+par: PRISMA_CONF FP_SHIFT_Z ---> val: 0
+COST 0.15
+FITTED MEAN 0
+FITTED SIGMA 0.3
+##################Scan of PRISMA_CONF of FP_SHIFT_Z
+=============== it: 18 =================
+par: PRISMA_CONF FP_SHIFT_X ---> val: 0
+par: PRISMA_CONF FP_SHIFT_Z ---> val: 0
+COST 0.15
+FITTED MEAN 0
+FITTED SIGMA 0.3
+=============== it: 19 =================
+par: PRISMA_CONF FP_SHIFT_X ---> val: 0
+par: PRISMA_CONF FP_SHIFT_Z ---> val: -0.005
+COST 0.15
+FITTED MEAN 0
+FITTED SIGMA 0.3
+=============== it: 20 =================
+par: PRISMA_CONF FP_SHIFT_X ---> val: 0
+par: PRISMA_CONF FP_SHIFT_Z ---> val: 0
+COST 0.15
+FITTED MEAN 0
+FITTED SIGMA 0.3
+=============== it: 21 =================
+par: PRISMA_CONF FP_SHIFT_X ---> val: 0
+par: PRISMA_CONF FP_SHIFT_Z ---> val: 0.005
+COST 0.15
+FITTED MEAN 0
+FITTED SIGMA 0.3
+#################Running with optimal parameters
+=============== it: 22 =================
+par: PRISMA_CONF FP_SHIFT_X ---> val: 0
+par: PRISMA_CONF FP_SHIFT_Z ---> val: 0
+COST 0.15
+FITTED MEAN 0
+FITTED SIGMA 0.3

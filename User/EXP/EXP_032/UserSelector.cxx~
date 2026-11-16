@@ -1,0 +1,85 @@
+#include "UserSelector.h"
+
+void UserSelector::SlaveBegin(TTree* treeToRead) {
+    AgataSelector::SlaveBegin(treeToRead);
+
+    // User selector intitialisation - done just once per file
+
+    UserHistograms& hu = userHistograms;
+    
+    hu.dir = outFile.mkdir("User","User's custom analysis");
+    hu.dir->cd();
+
+    if(conf.detectorsPresent.Agata && conf.detectorsPresent.Prisma){
+      for(auto& ion : conf.reaction.fragmentsOfInterest){
+	UserHistograms::IonHistograms ion_histos;
+	ion_histos.dir = hu.dir->mkdir( Form("Z%i_A%i", ion.first.Z, ion.first.A), Form("Z%i_A%i", ion.first.Z, ion.first.A));
+	ion_histos.dir->cd();
+
+	ion_histos.h_DC = new TH1D(Form("h_DC_Z%i_A%i", ion.first.Z, ion.first.A), Form("DC gamma spectrum for (Z=%i, A=%i)", ion.first.Z, ion.first.A) , 8000,0,8000);
+	ion_histos.m_DC_Theta = new TH2D(Form("m_DC_Theta_Z%i_A%i", ion.first.Z, ion.first.A), Form("DC gamma spectrum vs Theta for (Z=%i, A=%i)", ion.first.Z, ion.first.A),900,0,180,4000,0,8000);
+	ion_histos.m_DC_Qvalue = new TH2D(Form("m_DC_Qvalue_Z%i_A%i", ion.first.Z, ion.first.A), Form("DC gamma spectrum vs Qvalue for (Z=%i, A=%i)", ion.first.Z, ion.first.A),600, conf.prisma.minExEne, conf.prisma.maxExEne, 4000,0,8000);
+	ion_histos.m_DC_DC = new TH2D(Form("m_DC_DC_Z%i_A%i", ion.first.Z, ion.first.A), Form("DC-DC gamma matrix for (Z=%i, A=%i)", ion.first.Z, ion.first.A),4000,0,8000,4000,0,8000);
+	
+	hu.ionHistos[ion.first] = ion_histos;
+      } 
+    }
+    
+}
+
+Bool_t UserSelector::Process(Long64_t entry) {
+    AgataSelector::Process(entry);
+
+    UserHistograms& hu = userHistograms;
+
+    if(!prismaOutput.all_ok)
+      return kTRUE;
+    
+    if(conf.detectorsPresent.Agata && conf.detectorsPresent.Prisma){
+      ReactionFragment::Ion detectedIon{prismaOutput.A, prismaOutput.Z};
+      auto histoIt = hu.ionHistos.find(detectedIon);
+
+      if(histoIt != hu.ionHistos.end()) {
+
+	double dtof = conf.user.gamma_tof_offset;
+	double tof = prismaOutput.TOF * UNITS::ns + dtof;
+	double beta = prismaOutput.Length / tof / UNITS::PHYSICS::c_light;
+
+	std::cout << "dtof = " << dtof << std::endl;
+	std::cout << "tof = " << tof << std::endl;
+	std::cout << std::endl;
+	
+	TVector3 betavect = prismaOutput.beta;
+	betavect.SetMag(beta);
+	
+	for(unsigned int i=0; i<gammaAgataPrisma.E.size(); i++){
+	  if(!gammaAgataPrisma.inCoinc.at(i)) continue;
+	  
+	  TLorentzVector pvect = agataOutput.P.at(i);
+	  pvect.Boost(-betavect);
+
+	  histoIt->second.h_DC->Fill(pvect.E());
+	  histoIt->second.m_DC_Theta->Fill(prismaOutput.p3.Angle(pvect.Vect()) / UNITS::deg, pvect.E());
+	  histoIt->second.m_DC_Qvalue->Fill(prismaOutput.TKEL / UNITS::MeV, pvect.E()); 
+
+	  for(unsigned int j = 0; j < i; j++) {
+	    if(!gammaAgataPrisma.inCoinc.at(j)) continue;
+	  
+	    TLorentzVector pvect2 = agataOutput.P.at(j);
+	    pvect2.Boost(-betavect);
+	  
+	    histoIt->second.m_DC_DC->Fill(pvect.E(),pvect2.E());
+	    histoIt->second.m_DC_DC->Fill(pvect2.E(),pvect.E());
+	  
+	  }	  
+	}
+      }
+    }
+    
+    return kTRUE;
+}
+
+void UserSelector::SlaveTerminate() {
+    AgataSelector::SlaveTerminate();
+    // User terminate
+}

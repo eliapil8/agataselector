@@ -1,0 +1,14 @@
+# IC Sides threshold file cms 2024, experiment 22.096
+# Calibration not required, only thresholds (i.e cal is y = 1x + 0)
+# Layer A 
+id 0 0 cal 0 1 thr 160.  4000.
+id 0 1 cal 0 1 thr 160.  4000.
+# Layer B 
+id 1 0 cal 0 1 thr 160.  4000.
+id 1 1 cal 0 1 thr 140.  4000.
+# Layer C
+id 2 0 cal 0 1 thr 380.  4000.
+id 2 1 cal 0 1 thr 140.  4000.
+# Layer D
+id 3 0 cal 0 1 thr 130.  4000.
+id 3 1 cal 0 1 thr 120.  4000.  

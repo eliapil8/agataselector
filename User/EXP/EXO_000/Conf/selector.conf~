@@ -1,0 +1,881 @@
+#Configuration file for the selector
+#Format: | KEYWORD | value(s) | Unit of measure | Comment |
+#Comments are ignored unit of measure # means none
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+DETECTORS_PRESENT
+DANTE			NO	#		Dante is present YES/NO
+LABR			NO	#		Labr is present YES/NO
+OSCARDOWN			NO	#		Oscar Down is present YES/NO
+EXSSIDE			YES	#		EXSSIDE Forward is present YES/NO
+OSCARUP			NO	#		Oscar Up is present YES/NO
+SAURONBW			NO	#		Sauron Backward is present YES/NO
+MCP			YES	#		EXOTIC Mcps are present YES/NO
+PRISMA			NO	#		Prisma is present YES/NO
+EUCLIDES			NO	#		Euclides is present YES/NO
+SAURONFW			NO	#		Sauron Forward is present YES/NO
+SPIDER			NO	#		Spider is present YES/NO
+AGATA			NO	#		Agata is present YES/NO
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+REPLAY_CONF
+SUM_FILE_PATTERN			sum	#		Hadded file pattern
+REPLAY_DIR_PATTERN			run_	#		Replay directory pattern
+TREE_NAME			TreeMaster	#		Input tree name
+IN_FILE_PATTERN			Tree_	#		Input file pattern
+CONF_PATH			./Conf	#		Replay conf folder path
+ENABLED_HISTOS			enabled_histos.conf	#		File name with list of enabled histograms
+OUT_PATH			./Out/crossMask	#		Output path
+OUT_FILE_PATTERN			run_	#		Output file pattern
+IN_SUB_PATH			/Out/Analysis	#		Input sub path
+IN_PATH			./Data/crossMask	#		Input path
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+REACTION_CONF
+REACTION_POSITION			0.5	#			Position of the reaction in the taget 0->front 0.5->middle, 1->back
+ENERGY			0	MeV			Beam energy
+TARGET			1 1	#			Target ion A Z
+BEAM			1 1	#			Beam ion A Z
+ION			1 1	#			Fragment of interest for binary reaction calculation: A Z (those detected)
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+TARGET_CONF
+ELOSS_TABLE_TYPE			0	#			Type of eloss table 0 -> SRIM, 1-> Geant4, 2 ->Lise
+DEG_DISTANCE			0	um			Degrader distance in um
+DEG_THICKNESS			0	mg/cm2			Degrader thickness in mg
+ROTATIONZ			0	deg			Target rotation on the Z axis in degrees
+ROTATIONX			0	deg			Target rotation on the X axis in degrees
+TILT			0	deg			Target tilt in degrees; Negative values for clockwise rotations
+THICKNESS			0	mg/cm2			Target thickness-density in mg/cm2 or units alike
+DEG_PRESENT			NO	#		Degrader present YES/NO
+DEG_MATERIAL			none	#		Degrader material
+MATERIAL			none	#		Target material
+DEG_POS			AFTER					Degrader position BEFORE/AFTER
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+AGATA_CONF
+BIN_WIDTH			1	#			Bin width in gamma histograms
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			10	#			Time window right with with the same type of det
+COINC_W_LEFT			-1	#			Time window left with the same type of det
+TRACKING_FOM_THR			0	#			Threshold for the figure of merit of the tracking (0-1.02)
+ANGLE			0	deg			Detector angle. For AGATA should be 180-prisma_angle
+Y_SHIFT			0	mm			Detector y shift for optimization purposes
+Z_SHIFT			0	mm			Detector z shift for optimization purposes
+THETA_Y			0	deg			Detector rotation on the vertical plane for optimization purposes
+X_SHIFT			0	mm			Detector x shift for optimization purposes
+GAMMA_E_MAX			4000	keV			Maximum gamma energy in histograms
+TIME_UNIT			10	ns			Timestamp unit, should 10*ns
+THETA_X			0	deg			Detector rotation on the horizontal plane for optimization purposes
+BETA_AVG_MAG			0.1	#			Average beta magnitude Doppler correction for detector
+PHI			0	deg			Detector phi rotation for optimization purposes
+CFD_UNIT			10	ns			Cfd units
+BETA_AVG_THETA			20	deg			Average beta theta Doppler correction for detector
+BETA_AVG_PHI			180	deg			Average beta phi Doppler correction for detector
+EXCLUDE_ANCILLARY			NO	#		Only analyze event in anticoincidence with ancillaries
+ENABLE_TREE			NO	#		Ebable or disable detector TTree to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Ebable or disable detector histos to save memory
+EXCLUDE_TS			0 0	ms			Exclude events in this  timestamp region, beginning of run is TS=0
+LUT				#		Lookup table path
+SPECTRA_TYPE			TRACKED					Spectra type: SEGMENT, CORE, CORE1, ADDBACK, TRACKED, CALORIMETER
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+PRISMA_CONF
+DE_TYPE			0	#			DE variable used for Z gates: 0 -> DE_AB, 1 -> DE_A, 2 -> RANGE
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+AQ_NBINS			1000	#			Number of bins in A over Q plots 
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right with with the same type of det
+COINC_W_LEFT			-1	#			Time window left with the same type of det
+MAX_EX_ENE			100	#			Maximum Total Excitation energy in histograms
+MAX_IC_dENE			7000	#			Maximum IC energy of deltaE in histograms
+TAC_GAIN			1	#			Gain for prisma tac
+TOF_OFFSET			0	ns			Offset for recalibration of TOF
+TOF_GAIN			1	#			Gain for recalibration of TOF
+Y_SCALE			1	#			Scale of Y of MCP
+MAX_IC_ENE			10000	#			Maximum IC energy in histograms
+BETA_OFFSET			0	#			Offset for recalibration of Beta
+MCP_ANGLE			0	deg			Intrinsic theta rotation of MCP
+ANGLE			0	deg			Detector angle. For AGATA should be 180-prisma_angle
+Y_SHIFT			0	mm			Detector y shift for optimization purposes
+X_SHIFT			0	mm			Detector x shift for optimization purposes
+Z_SHIFT			0	mm			Detector z shift for optimization purposes
+THETA_Y			0	deg			Detector rotation on the vertical plane for optimization purposes
+TAC_OFFSET			0	#			Offset for prisma tac
+TIME_UNIT			10	ns			Timestamp unit, should 10*ns
+MIN_EX_ENE			-100	#			Minimum Total Excitation energy in histograms
+X_SCALE			1	#			Scale of X of MCP
+THETA_X			0	deg			Detector rotation on the horizontal plane for optimization purposes
+BETA_AVG_MAG			0.1	#			Average beta magnitude Doppler correction for detector
+PHI			0	deg			Detector phi rotation for optimization purposes
+CFD_UNIT			0	ns			Cfd units
+MCP_THETA_X			0	deg			Intrinsic rotation around X axis of MCP
+BETA_AVG_THETA			20	deg			Average beta theta Doppler correction for detector
+BETA_AVG_PHI			180	deg			Average beta phi Doppler correction for detector
+BETA_GAIN			1	#			Gain for recalibration of Beta
+REQUIRE_ICOK			YES	#		Require ionization chamber ok in analysis
+REQUIRE_MCPOK			YES	#		Require mcp ok in analysis
+AOVERQ_TEVO_HISTS			NO	#		Enable time evolution A over Q histos
+REQUIRE_TRAJOK			YES	#		Require trajectory ok in analysis
+AOVERQ_HISTS			YES	#		Enable A over Q histos
+REQUIRE_SIDEOK			YES	#		Require ionization chamber side ok in analysis
+ANA_HISTS			NO	#		Enable ana histos
+RAW_HISTS			NO	#		Enable raw histos
+MISC_HISTS			NO	#		Enable misc histos
+PRISMAFILTER_TKEL			NO	#		Use prismafilter TKEL instead of internal calculations
+REQUIRE_TOFOK			YES	#		Require time of flight ok in analysis
+ENABLE_TREE			NO	#		Ebable or disable detector TTree to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Ebable or disable detector histos to save memory
+A_RANGE			0 4	#			A for plots: min max
+Z_RANGE			0 2	#			Z for plots: min max
+BROKEN_PPAC_CHANNELS			9 0	#		Broken MWPPAC segments: 1 -> broken, 0-> not broken
+BROKEN_IC_CHANNELS			2 1	#		Broken ionization channel segments: 1 -> broken, 0-> not broken
+PRISMA_FILE_PATTERN			Tree_	#		Prisma input file pattern (for --update_prisma option only)
+PRISMA_IN_PATH			./PrismaData	#		Prisma input path (for --update_prisma option only)
+PRISMA_DIR_PATTERN			run_	#		Prisma directory pattern (for --update_prisma option only)
+LUT				#		Lookup table path
+AQ_PLOTS			1 0 1	#			A/Q conf for histos. Z qmin qmax
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+SPIDER_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right with with the same type of det
+COINC_W_LEFT			-1	#			Time window left with the same type of det
+DEADLAYER_THICKNESS			0	mg/cm2			Dead layer thickness-density in mg/cm2 or units alike
+SPIDER_EX_MAX			90	MeV			SPIDER histograms Ex max range
+SPIDER_EX_BIN_WIDTH			0.1	#			Bin width for spider Ex histograms
+SPIDER_E_MAX			200	MeV			SPIDER histograms max range
+ANGLE			0	deg			Detector angle. For AGATA should be 180-prisma_angle
+Y_SHIFT			0	mm			Detector y shift for optimization purposes
+X_SHIFT			0	mm			Detector x shift for optimization purposes
+E_GAIN			1	#			Gain in energy (recalibration)
+Z_SHIFT			0	mm			Detector z shift for optimization purposes
+THETA_Y			0	deg			Detector rotation on the vertical plane for optimization purposes
+E_SHIFT			0	#			Shift in energy (recalibration)
+SPIDER_EX_MIN			-10	MeV			SPIDER histograms Ex min range
+TIME_UNIT			10	ns			Timestamp unit, should 10*ns
+THETA_X			0	deg			Detector rotation on the horizontal plane for optimization purposes
+BETA_AVG_MAG			0.1	#			Average beta magnitude Doppler correction for detector
+PHI			0	deg			Detector phi rotation for optimization purposes
+CFD_UNIT			0	ns			Cfd units
+SPIDER_BIN_WIDTH			0.1	#			Bin width for spider histograms
+BETA_AVG_THETA			20	deg			Average beta theta Doppler correction for detector
+BETA_AVG_PHI			180	deg			Average beta phi Doppler correction for detector
+KEEP_HIGH_ENE_EVT			YES	#		Only analyses the high energy events in spider for DC
+ENABLE_TREE			NO	#		Ebable or disable detector TTree to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Ebable or disable detector histos to save memory
+BROKEN_CHANNEL			0 0	#			Broken board channel
+DEADLAYER_MATERIAL			27-13	#		Target material
+LUT			LUT_SPIDER.dat	#		Lookup table path
+ION			1 1	#			Ion assumed in spider
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+SAURONFW_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right with with the same type of det
+COINC_W_LEFT			-1	#			Time window left with the same type of det
+ABSORBER_THICKNESS			0	mg/cm2			Absorber thickness-density in mg/cm2 or units alike
+DEADLAYER_THICKNESS			0	mg/cm2			Dead layer thickness-density in mg/cm2 or units alike
+SAURON_EX_BIN_WIDTH			0.1	#			Bin width for Sauron Ex histograms
+ENE_WINDOW_LEFT			-0.1	#			Tolerance for energy P-N coincidence
+TARGET_DISTANCE			100	mm			Distance from target
+SAURON_E_MAX			200	MeV			SAURON histograms max range
+ANGLE			0	deg			Detector angle. For AGATA should be 180-prisma_angle
+Y_SHIFT			0	mm			Detector y shift for optimization purposes
+X_SHIFT			0	mm			Detector x shift for optimization purposes
+E_GAIN			1	#			Gain in energy (recalibration) 
+Z_SHIFT			0	mm			Detector z shift for optimization purposes
+THETA_Y			0	deg			Detector rotation on the vertical plane for optimization purposes
+E_SHIFT			0	#			Shift in energy (recalibration) 
+TIME_UNIT			10	ns			Timestamp unit, should 10*ns
+SAURON_EX_MAX			90	MeV			Sauron histograms Ex max range
+THETA_X			0	deg			Detector rotation on the horizontal plane for optimization purposes
+BETA_AVG_MAG			0.1	#			Average beta magnitude Doppler correction for detector
+PHI			0	deg			Detector phi rotation for optimization purposes
+CFD_UNIT			0	ns			Cfd units
+ENE_WINDOW_RIGHT			0.1	#			Tolerance for energy P-N coincidence
+BETA_AVG_THETA			20	deg			Average beta theta Doppler correction for detector
+BETA_AVG_PHI			180	deg			Average beta phi Doppler correction for detector
+SAURON_BIN_WIDTH			0.1	#			Bin width for Sauron histograms
+PID_FROMPSIDE			YES	#		PID is taken from the pSide
+PID_HISTOGRAMS			NO	#		Draw pid matrix histograms
+SINGLE_SIDE_DETECTOR			NO	#		Disable P-N coincidences and use only one side (the one with priority) YES/NO
+PID_MATCH			YES	#		Matches PID from front and back side
+P_SIDE_PRIORITY			NO	#		P side priority for energy and time YES/NO
+ENABLE_TREE			NO	#		Ebable or disable detector TTree to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Ebable or disable detector histos to save memory
+BROKEN_CHANNEL			0 0	#			Broken board channel
+ABSORBER_MATERIAL			none	#		Absorber material
+DEADLAYER_MATERIAL			27-13	#		Dead layer material
+LUT			LUT_SAURON.dat	#		Lookup table path
+ION			1 1	#			Ion assumed in Sauron
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+SAURONBW_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right with with the same type of det
+COINC_W_LEFT			-1	#			Time window left with the same type of det
+ABSORBER_THICKNESS			0	mg/cm2			Absorber thickness-density in mg/cm2 or units alike
+DEADLAYER_THICKNESS			0	mg/cm2			Dead layer thickness-density in mg/cm2 or units alike
+SAURON_EX_BIN_WIDTH			0.1	#			Bin width for Sauron Ex histograms
+ENE_WINDOW_LEFT			-0.1	#			Tolerance for energy P-N coincidence
+TARGET_DISTANCE			100	mm			Distance from target
+SAURON_E_MAX			200	MeV			SAURON histograms max range
+ANGLE			0	deg			Detector angle. For AGATA should be 180-prisma_angle
+Y_SHIFT			0	mm			Detector y shift for optimization purposes
+X_SHIFT			0	mm			Detector x shift for optimization purposes
+E_GAIN			1	#			Gain in energy (recalibration) 
+Z_SHIFT			0	mm			Detector z shift for optimization purposes
+THETA_Y			0	deg			Detector rotation on the vertical plane for optimization purposes
+E_SHIFT			0	#			Shift in energy (recalibration) 
+TIME_UNIT			10	ns			Timestamp unit, should 10*ns
+SAURON_EX_MAX			90	MeV			Sauron histograms Ex max range
+THETA_X			0	deg			Detector rotation on the horizontal plane for optimization purposes
+BETA_AVG_MAG			0.1	#			Average beta magnitude Doppler correction for detector
+PHI			0	deg			Detector phi rotation for optimization purposes
+CFD_UNIT			0	ns			Cfd units
+ENE_WINDOW_RIGHT			0.1	#			Tolerance for energy P-N coincidence
+BETA_AVG_THETA			20	deg			Average beta theta Doppler correction for detector
+BETA_AVG_PHI			180	deg			Average beta phi Doppler correction for detector
+SAURON_BIN_WIDTH			0.1	#			Bin width for Sauron histograms
+PID_FROMPSIDE			YES	#		PID is taken from the pSide
+PID_HISTOGRAMS			NO	#		Draw pid matrix histograms
+SINGLE_SIDE_DETECTOR			NO	#		Disable P-N coincidences and use only one side (the one with priority) YES/NO
+PID_MATCH			YES	#		Matches PID from front and back side
+P_SIDE_PRIORITY			NO	#		P side priority for energy and time YES/NO
+ENABLE_TREE			NO	#		Ebable or disable detector TTree to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Ebable or disable detector histos to save memory
+BROKEN_CHANNEL			0 0	#			Broken board channel
+ABSORBER_MATERIAL			none	#		Absorber material
+DEADLAYER_MATERIAL			27-13	#		Dead layer material
+LUT			LUT_SAURON.dat	#		Lookup table path
+ION			1 1	#			Ion assumed in Sauron
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+EXSSIDE_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			5	#			Time window right with with the same type of det
+COINC_W_LEFT			-5	#			Time window left with the same type of det
+ABSORBER_THICKNESS			0	mg/cm2			Absorber thickness-density in mg/cm2 or units alike
+DEADLAYER_THICKNESS			0	mg/cm2			Dead layer thickness-density in mg/cm2 or units alike
+ENE_WINDOW_LEFT			-185	#			Tolerance for energy P-N coincidence
+TARGET_DISTANCE			6850	mm			Distance from target
+ANGLE			0	deg			Detector angle. For AGATA should be 180-prisma_angle
+Y_SHIFT			0	mm			Detector y shift for optimization purposes
+EXSSIDE_E_MAX			10000	MeV			EXSSIDE histograms max range
+EXSSIDE_BIN_WIDTH			0.1	#			Bin width for EXSSIDE histograms
+X_SHIFT			0	mm			Detector x shift for optimization purposes
+E_GAIN			1	#			Gain in energy (recalibration) 
+Z_SHIFT			0	mm			Detector z shift for optimization purposes
+THETA_Y			0	deg			Detector rotation on the vertical plane for optimization purposes
+E_SHIFT			0	#			Shift in energy (recalibration) 
+TIME_UNIT			1	ps			Timestamp unit, should 10*ns
+THETA_X			0	deg			Detector rotation on the horizontal plane for optimization purposes
+BETA_AVG_MAG			0.	#			Average beta magnitude Doppler correction for detector
+PHI			0	deg			Detector phi rotation for optimization purposes
+CFD_UNIT			1	ps			Cfd units
+ENE_WINDOW_RIGHT			60	#			Tolerance for energy P-N coincidence
+BETA_AVG_THETA			0	deg			Average beta theta Doppler correction for detector
+BETA_AVG_PHI			0	deg			Average beta phi Doppler correction for detector
+AVG_Y			16	#			Average Y of the ions [digi channel]
+AVG_X			47	#			Average X of the ions [digi channel]
+MIN_E			2000	#			Minimum E value above which events are processed in the analysis
+SINGLE_SIDE_DETECTOR			NO	#		Disable P-N coincidences and use only one side (the one with priority) YES/NO
+P_SIDE_PRIORITY			NO	#		P side priority for energy and time YES/NO
+ENABLE_TREE			NO	#		Ebable or disable detector TTree to save memory (strongly encouraged)
+REFERENCE_CHANNEL		15	#		Reference channel for Time coincidences [digi channel]
+ENABLE_HISTS			YES	#		Ebable or disable detector histos to save memory
+BROKEN_CHANNEL			0 0	#			Broken board channel
+ABSORBER_MATERIAL			none	#		Absorber material
+DEADLAYER_MATERIAL			none	#		Dead layer material
+LUT			LUT_EXSSIDE.dat	#		Lookup table path
+ION			4 2	#			Ion assumed in EXSSIDE
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+OSCARUP_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right with with the same type of det
+COINC_W_LEFT			-1	#			Time window left with the same type of det
+DEADLAYER_THICKNESS			0	mg/cm2			Dead layer thickness-density in mg/cm2 or units alike
+OSCAR_EX_MAX			90	MeV			OSCAR histograms Ex max range
+OSCAR_EX_BIN_WIDTH			0.1	#			Bin width for oscar Ex histograms
+OSCAR_E_MAX			200	MeV			OSCAR histograms max range
+ANGLE			0	deg			Detector angle. For AGATA should be 180-prisma_angle
+Y_SHIFT			0	mm			Detector y shift for optimization purposes
+X_SHIFT			0	mm			Detector x shift for optimization purposes
+E_GAIN			1	#			Gain in energy (recalibration)
+Z_SHIFT			0	mm			Detector z shift for optimization purposes
+OSCAR_BIN_WIDTH			0.1	#			Bin width for oscar histograms
+THETA_Y			0	deg			Detector rotation on the vertical plane for optimization purposes
+E_SHIFT			0	#			Shift in energy (recalibration)
+TIME_UNIT			10	ns			Timestamp unit, should 10*ns
+THETA_X			0	deg			Detector rotation on the horizontal plane for optimization purposes
+BETA_AVG_MAG			0.1	#			Average beta magnitude Doppler correction for detector
+PHI			0	deg			Detector phi rotation for optimization purposes
+CFD_UNIT			0	ns			Cfd units
+BETA_AVG_THETA			20	deg			Average beta theta Doppler correction for detector
+BETA_AVG_PHI			180	deg			Average beta phi Doppler correction for detector
+EK_FROM_BETA_AVG			NO	#		Take kinetic energy from beta average, while direction from detector (YES/NO)
+GLOBAL_DE_E_CUTS			NO	#		Apply DE vs E cuts for each pad/strip combination (YES/NO)
+DE_E_HISTOS			NO	#		Create matrices dE vs E for each pad/strip combination (YES/NO)
+USE_E_LAYER_ONLY			NO	#		Only use E layer for the analysis (YES/NO)
+ENABLE_TREE			NO	#		Ebable or disable detector TTree to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Ebable or disable detector histos to save memory
+BROKEN_CHANNEL			-1 -1	#			Broken board channel
+DEADLAYER_MATERIAL			27-13	#		Dead layer material
+LUT			LUT_OSCAR.dat	#		Lookup table path
+ION			1 1	#			Ion assumed in Oscar
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+OSCARDOWN_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right with with the same type of det
+COINC_W_LEFT			-1	#			Time window left with the same type of det
+DEADLAYER_THICKNESS			0	mg/cm2			Dead layer thickness-density in mg/cm2 or units alike
+OSCAR_EX_MAX			90	MeV			OSCAR histograms Ex max range
+OSCAR_EX_BIN_WIDTH			0.1	#			Bin width for oscar Ex histograms
+OSCAR_E_MAX			200	MeV			OSCAR histograms max range
+ANGLE			0	deg			Detector angle. For AGATA should be 180-prisma_angle
+Y_SHIFT			0	mm			Detector y shift for optimization purposes
+X_SHIFT			0	mm			Detector x shift for optimization purposes
+E_GAIN			1	#			Gain in energy (recalibration)
+Z_SHIFT			0	mm			Detector z shift for optimization purposes
+OSCAR_BIN_WIDTH			0.1	#			Bin width for oscar histograms
+THETA_Y			0	deg			Detector rotation on the vertical plane for optimization purposes
+E_SHIFT			0	#			Shift in energy (recalibration)
+TIME_UNIT			10	ns			Timestamp unit, should 10*ns
+THETA_X			0	deg			Detector rotation on the horizontal plane for optimization purposes
+BETA_AVG_MAG			0.1	#			Average beta magnitude Doppler correction for detector
+PHI			0	deg			Detector phi rotation for optimization purposes
+CFD_UNIT			0	ns			Cfd units
+BETA_AVG_THETA			20	deg			Average beta theta Doppler correction for detector
+BETA_AVG_PHI			180	deg			Average beta phi Doppler correction for detector
+EK_FROM_BETA_AVG			NO	#		Take kinetic energy from beta average, while direction from detector (YES/NO)
+GLOBAL_DE_E_CUTS			NO	#		Apply DE vs E cuts for each pad/strip combination (YES/NO)
+DE_E_HISTOS			NO	#		Create matrices dE vs E for each pad/strip combination (YES/NO)
+USE_E_LAYER_ONLY			NO	#		Only use E layer for the analysis (YES/NO)
+ENABLE_TREE			NO	#		Ebable or disable detector TTree to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Ebable or disable detector histos to save memory
+BROKEN_CHANNEL			-1 -1	#			Broken board channel
+DEADLAYER_MATERIAL			27-13	#		Dead layer material
+LUT			LUT_OSCAR.dat	#		Lookup table path
+ION			1 1	#			Ion assumed in Oscar
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+LABR_CONF
+REFERENCE			16	#			Reference ID for time alignment
+BIN_WIDTH			1	#			Bin width in gamma histograms
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			10	#			Time window right with with the same type of det
+COINC_W_LEFT			-1	#			Time window left with the same type of det
+ANGLE			0	deg			Detector angle. For AGATA should be 180-prisma_angle
+Y_SHIFT			0	mm			Detector y shift for optimization purposes
+E_GAIN			1	#			Gain in energy (recalibratyion)
+Z_SHIFT			0	mm			Detector z shift for optimization purposes
+THETA_Y			0	deg			Detector rotation on the vertical plane for optimization purposes
+X_SHIFT			0	mm			Detector x shift for optimization purposes
+GAMMA_E_MAX			10000	keV			Maximum gamma energy in histograms
+E_SHIFT			0	#			Shift in energy (recalibratyion)
+TIME_UNIT			10	ns			Timestamp unit, should 10*ns
+THETA_X			0	deg			Detector rotation on the horizontal plane for optimization purposes
+BETA_AVG_MAG			0.1	#			Average beta magnitude Doppler correction for detector
+PHI			0	deg			Detector phi rotation for optimization purposes
+CFD_UNIT			0.001	ns			Cfd units
+BETA_AVG_THETA			20	deg			Average beta theta Doppler correction for detector
+BETA_AVG_PHI			180	deg			Average beta phi Doppler correction for detector
+EXCLUDE_ANCILLARY			NO	#		Only analyze event in anticoincidence with ancillaries
+ENABLE_TREE			NO	#		Ebable or disable detector TTree to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Ebable or disable detector histos to save memory
+EXCLUDE_TS			0 0	ms			Exclude events in this  timestamp region, beginning of run is TS=0
+LUT			LUT_LABR.dat	#		Lookup table path
+ION			1 1	#			Ion assumed in labr
+SPECTRA_TYPE			CORE					Spectra type: SEGMENT, CORE, CORE1, ADDBACK, TRACKED, CALORIMETER
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+DANTE_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right with with the same type of det
+COINC_W_LEFT			-1	#			Time window left with the same type of det
+BETA_AVG_PHI			180	deg			Average beta phi Doppler correction for detector
+BETA_AVG_THETA			20	deg			Average beta theta Doppler correction for detector
+CFD_UNIT			0.001	ns			Cfd units
+BETA_AVG_MAG			0.1	#			Average beta magnitude Doppler correction for detector
+TIME_UNIT			10	ns			Timestamp unit, should 10*ns
+THETA_Y			0	deg			Detector rotation on the vertical plane for optimization purposes
+PHI			0	deg			Detector phi rotation for optimization purposes
+Z_SHIFT			0	mm			Detector z shift for optimization purposes
+THETA_X			0	deg			Detector rotation on the horizontal plane for optimization purposes
+X_SHIFT			0	mm			Detector x shift for optimization purposes
+Y_SHIFT			0	mm			Detector y shift for optimization purposes
+ANGLE			0	deg			Detector angle. For AGATA should be 180-prisma_angle
+MANDATORY_TOF			NO	#		request TOF for a valid dante event
+MANDATORY_X			YES	#		request X for a valid dante event
+MANDATORY_T			YES	#		request time for a valid dante event
+ENABLE_TREE			NO	#		Ebable or disable detector TTree to save memory (strongly encouraged)
+MANDATORY_Y			YES	#		request Y for a valid dante event
+ENABLE_HISTS			YES	#		Ebable or disable detector histos to save memory
+LUT			LUT_DANTE.dat	#		Lookup table path
+ION			1 1	#			Ion assumed in dante
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+MCP_CONF
+Nr_MCP			1	#			Number of employed EXOTIC MCPs
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			100000	#			Time window right with with the same type of det
+COINC_W_LEFT			-20000	#			Time window left with the same type of det
+AVG_Y2			0	#			Average beam position in MCP2 Y [channels]
+TOLERANCE			1000000	#			Tolerance in [mm] to define a good event (hitting the target)
+AVG_X2			0	#			Average beam position in MCP2 X [channels]
+ANGLE			45	deg			Detector angle. For AGATA should be 180-prisma_angle
+Y_SHIFT			0	mm			Detector y shift for optimization purposes
+AVG_Y1			11089	#			Average beam position in MCP1 Y [channels] Usually 9000
+X_SHIFT			0	mm			Detector x shift for optimization purposes
+Z_SHIFT			0	mm			Detector z shift for optimization purposes
+TIME_UNIT			1	ps			Timestamp unit, should 10*ns
+THETA_X			0	deg			Detector rotation on the horizontal plane for optimization purposes
+BETA_AVG_MAG			0.0	#			Average beta magnitude Doppler correction for detector
+PHI			0	deg			Detector phi rotation for optimization purposes
+CFD_UNIT			1	ps			Cfd units
+BETA_AVG_THETA			20	deg			Average beta theta Doppler correction for detector
+BETA_AVG_PHI			180	deg			Average beta phi Doppler correction for detector
+THETA_Y			0	deg			Detector rotation on the vertical plane for optimization purposes
+AVG_X1			10516	#			Average beam position in MCP1 X [channels] Usually 7700
+MANDATORY_TOF			NO	#		request TOF for a valid dante event
+MANDATORY_X			YES	#		request X for a valid mcp event
+MANDATORY_Y			YES	#		request Y for a valid mcp event
+MANDATORY_T			NO	#		request time for a valid mcp event
+ENABLE_TREE			NO	#		Ebable or disable detector TTree to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Ebable or disable detector histos to save memory
+LUT			LUT_MCP.dat	#		Lookup table path
+ION			4 2	#			Ion assumed in mcp
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+EUCLIDES_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right with with the same type of det
+COINC_W_LEFT			-1	#			Time window left with the same type of det
+ANGLE			0	deg			Detector angle. For AGATA should be 180-prisma_angle
+Y_SHIFT			0	mm			Detector y shift for optimization purposes
+X_SHIFT			0	mm			Detector x shift for optimization purposes
+E_GAIN			1	#			Gain in energy (recalibration)
+Z_SHIFT			0	mm			Detector z shift for optimization purposes
+THETA_Y			0	deg			Detector rotation on the vertical plane for optimization purposes
+THETA_X			0	deg			Detector rotation on the horizontal plane for optimization purposes
+BETA_AVG_MAG			0.1	#			Average beta magnitude Doppler correction for detector
+PHI			0	deg			Detector phi rotation for optimization purposes
+CFD_UNIT			0	ns			Cfd units
+BETA_AVG_THETA			20	deg			Average beta theta Doppler correction for detector
+BETA_AVG_PHI			180	deg			Average beta phi Doppler correction for detector
+TIME_UNIT			10	ns			Timestamp unit, should 10*ns
+E_SHIFT			0	#			Shift in energy (recalibration)
+ENABLE_TREE			NO	#		Ebable or disable detector TTree to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Ebable or disable detector histos to save memory
+LUT			LUT_EUCLIDES.dat	#		Lookup table path
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+AGATAPRISMA_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right
+COINC_W_LEFT			0	#			Time window left
+ENABLE_TREE			NO	#		Ebable or disable coincidence TTree branch to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Enable histograms of coincidence
+EX_VALUES			0 1	MeV			Excitation energy gates, first value is the min, second value is the max
+BP_FRAGMENT_POSITION			MID_TARGET					Doppler correction position for binary partner
+FRAGMENT_POSITION			MID_TARGET					Doppler correction position for detected ion
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+LABRPRISMA_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right
+COINC_W_LEFT			0	#			Time window left
+ENABLE_TREE			NO	#		Ebable or disable coincidence TTree branch to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Enable histograms of coincidence
+EX_VALUES			0 1	MeV			Excitation energy gates, first value is the min, second value is the max
+BP_FRAGMENT_POSITION			MID_TARGET					Doppler correction position for binary partner
+FRAGMENT_POSITION			MID_TARGET					Doppler correction position for detected ion
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+AGATASPIDER_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right
+COINC_W_LEFT			0	#			Time window left
+ENABLE_TREE			NO	#		Ebable or disable coincidence TTree branch to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Enable histograms of coincidence
+EX_VALUES			0 1	MeV			Excitation energy gates, first value is the min, second value is the max
+EX_VALUES_FILE			none	#			File name in the folder LUT containing the channel by channel gate in excitation energy
+EX_VALUES_FILE			none	#			File name in the folder LUT containing the channel by channel gate in excitation energy
+BP_FRAGMENT_POSITION			MID_TARGET					Doppler correction position for binary partner
+FRAGMENT_POSITION			MID_TARGET					Doppler correction position for detected ion
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+AGATASAURONFW_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right
+COINC_W_LEFT			0	#			Time window left
+ENABLE_TREE			NO	#		Ebable or disable coincidence TTree branch to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Enable histograms of coincidence
+EX_VALUES			0 1	MeV			Excitation energy gates, first value is the min, second value is the max
+BP_FRAGMENT_POSITION			MID_TARGET					Doppler correction position for binary partner
+FRAGMENT_POSITION			MID_TARGET					Doppler correction position for detected ion
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+AGATASAURONBW_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right
+COINC_W_LEFT			0	#			Time window left
+ENABLE_TREE			NO	#		Ebable or disable coincidence TTree branch to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Enable histograms of coincidence
+EX_VALUES			0 1	MeV			Excitation energy gates, first value is the min, second value is the max
+BP_FRAGMENT_POSITION			MID_TARGET					Doppler correction position for binary partner
+FRAGMENT_POSITION			MID_TARGET					Doppler correction position for detected ion
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+AGATAEXSSIDE_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right
+COINC_W_LEFT			0	#			Time window left
+ENABLE_TREE			NO	#		Ebable or disable coincidence TTree branch to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Enable histograms of coincidence
+EX_VALUES			0 1	MeV			Excitation energy gates, first value is the min, second value is the max
+BP_FRAGMENT_POSITION			MID_TARGET					Doppler correction position for binary partner
+FRAGMENT_POSITION			MID_TARGET					Doppler correction position for detected ion
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+AGATAOSCARUP_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right
+COINC_W_LEFT			0	#			Time window left
+BETA_AVG_PHI			180	deg			Average beta phi Doppler correction for coincidence
+BETA_AVG_THETA			20	deg			Average beta theta Doppler correction for coincidence
+BETA_AVG_MAG			0.1	#			Average beta magnitude Doppler correction for coincidence
+ENABLE_TREE			NO	#		Ebable or disable coincidence TTree branch to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Enable histograms of coincidence
+EX_VALUES			0 1	MeV			Excitation energy gates, first value is the min, second value is the max
+BP_FRAGMENT_POSITION			MID_TARGET					Doppler correction position for binary partner
+FRAGMENT_POSITION			MID_TARGET					Doppler correction position for detected ion
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+AGATAOSCARDOWN_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right
+COINC_W_LEFT			0	#			Time window left
+BETA_AVG_PHI			180	deg			Average beta phi Doppler correction for coincidence
+BETA_AVG_THETA			20	deg			Average beta theta Doppler correction for coincidence
+BETA_AVG_MAG			0.1	#			Average beta magnitude Doppler correction for coincidence
+ENABLE_TREE			NO	#		Ebable or disable coincidence TTree branch to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Enable histograms of coincidence
+EX_VALUES			0 1	MeV			Excitation energy gates, first value is the min, second value is the max
+BP_FRAGMENT_POSITION			MID_TARGET					Doppler correction position for binary partner
+FRAGMENT_POSITION			MID_TARGET					Doppler correction position for detected ion
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+LABRSPIDER_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right
+COINC_W_LEFT			0	#			Time window left
+ENABLE_TREE			NO	#		Ebable or disable coincidence TTree branch to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Enable histograms of coincidence
+EX_VALUES			0 1	MeV			Excitation energy gates, first value is the min, second value is the max
+EX_VALUES_FILE			none	#			File name in the folder LUT containing the channel by channel gate in excitation energy
+EX_VALUES_FILE			none	#			File name in the folder LUT containing the channel by channel gate in excitation energy
+BP_FRAGMENT_POSITION			MID_TARGET					Doppler correction position for binary partner
+FRAGMENT_POSITION			MID_TARGET					Doppler correction position for detected ion
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+LABRSAURONFW_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right
+COINC_W_LEFT			0	#			Time window left
+ENABLE_TREE			NO	#		Ebable or disable coincidence TTree branch to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Enable histograms of coincidence
+EX_VALUES			0 1	MeV			Excitation energy gates, first value is the min, second value is the max
+BP_FRAGMENT_POSITION			MID_TARGET					Doppler correction position for binary partner
+FRAGMENT_POSITION			MID_TARGET					Doppler correction position for detected ion
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+LABRSAURONBW_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right
+COINC_W_LEFT			0	#			Time window left
+ENABLE_TREE			NO	#		Ebable or disable coincidence TTree branch to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Enable histograms of coincidence
+EX_VALUES			0 1	MeV			Excitation energy gates, first value is the min, second value is the max
+BP_FRAGMENT_POSITION			MID_TARGET					Doppler correction position for binary partner
+FRAGMENT_POSITION			MID_TARGET					Doppler correction position for detected ion
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+LABREXSSIDE_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right
+COINC_W_LEFT			0	#			Time window left
+ENABLE_TREE			NO	#		Ebable or disable coincidence TTree branch to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Enable histograms of coincidence
+EX_VALUES			0 1	MeV			Excitation energy gates, first value is the min, second value is the max
+BP_FRAGMENT_POSITION			MID_TARGET					Doppler correction position for binary partner
+FRAGMENT_POSITION			MID_TARGET					Doppler correction position for detected ion
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+LABROSCARUP_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right
+COINC_W_LEFT			0	#			Time window left
+BETA_AVG_PHI			180	deg			Average beta phi Doppler correction for coincidence
+BETA_AVG_THETA			20	deg			Average beta theta Doppler correction for coincidence
+BETA_AVG_MAG			0.1	#			Average beta magnitude Doppler correction for coincidence
+ENABLE_TREE			NO	#		Ebable or disable coincidence TTree branch to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Enable histograms of coincidence
+EX_VALUES			0 1	MeV			Excitation energy gates, first value is the min, second value is the max
+BP_FRAGMENT_POSITION			MID_TARGET					Doppler correction position for binary partner
+FRAGMENT_POSITION			MID_TARGET					Doppler correction position for detected ion
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+LABROSCARDOWN_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right
+COINC_W_LEFT			0	#			Time window left
+BETA_AVG_PHI			180	deg			Average beta phi Doppler correction for coincidence
+BETA_AVG_THETA			20	deg			Average beta theta Doppler correction for coincidence
+BETA_AVG_MAG			0.1	#			Average beta magnitude Doppler correction for coincidence
+ENABLE_TREE			NO	#		Ebable or disable coincidence TTree branch to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Enable histograms of coincidence
+EX_VALUES			0 1	MeV			Excitation energy gates, first value is the min, second value is the max
+BP_FRAGMENT_POSITION			MID_TARGET					Doppler correction position for binary partner
+FRAGMENT_POSITION			MID_TARGET					Doppler correction position for detected ion
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+AGATAEUCLIDES_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right
+COINC_W_LEFT			0	#			Time window left
+ENABLE_TREE			NO	#		Ebable or disable coincidence TTree branch to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Enable histograms of coincidence
+EX_VALUES			0 1	MeV			Excitation energy gates
+BP_FRAGMENT_POSITION			MID_TARGET					Doppler correction position for binary partner
+FRAGMENT_POSITION			MID_TARGET					Doppler correction position for detected ion
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+LABREUCLIDES_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right
+COINC_W_LEFT			0	#			Time window left
+ENABLE_TREE			NO	#		Ebable or disable coincidence TTree branch to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Enable histograms of coincidence
+EX_VALUES			0 1	MeV			Excitation energy gates
+BP_FRAGMENT_POSITION			MID_TARGET					Doppler correction position for binary partner
+FRAGMENT_POSITION			MID_TARGET					Doppler correction position for detected ion
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+AGATADANTE_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right
+COINC_W_LEFT			0	#			Time window left
+ENABLE_TREE			NO	#		Ebable or disable coincidence TTree branch to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Enable histograms of coincidence
+BP_FRAGMENT_POSITION			MID_TARGET					Doppler correction position for binary partner
+FRAGMENT_POSITION			MID_TARGET					Doppler correction position for detected ion
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+AGATALABR_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right
+COINC_W_LEFT			0	#			Time window left
+ENABLE_TREE			NO	#		Ebable or disable coincidence TTree branch to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Enable histograms of coincidence
+BP_FRAGMENT_POSITION			MID_TARGET					Doppler correction position for binary partner
+FRAGMENT_POSITION			MID_TARGET					Doppler correction position for detected ion
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+LABRDANTE_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right
+COINC_W_LEFT			0	#			Time window left
+ENABLE_TREE			NO	#		Ebable or disable coincidence TTree branch to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Enable histograms of coincidence
+BP_FRAGMENT_POSITION			MID_TARGET					Doppler correction position for binary partner
+FRAGMENT_POSITION			MID_TARGET					Doppler correction position for detected ion
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+PRISMADANTE_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			0	#			Time window right
+COINC_W_LEFT			0	#			Time window left
+MAX_PHI_DISCR			90	deg			Maximum discrepancy in phi between the prisma reconstriction and the dante measurement
+MAX_THETA_DISCR			90	deg			Maximum discrepancy in theta between the prisma reconstriction and the dante measurement
+ENABLE_TREE			NO	#		Ebable or disable coincidence TTree branch to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Enable histograms of coincidence
+BP_FRAGMENT_POSITION			MID_TARGET					Doppler correction position for binary partner
+FRAGMENT_POSITION			MID_TARGET					Doppler correction position for detected ion
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+MCPEXSSIDE_CONF
+COINC_W_LEFT_RIGHT_BKG			0	#			Left Background time window on the right side of the coincidence peak
+COINC_W_RIGHT_LEFT_BKG			0	#			Right Background time window on the left side of the coincidence peak
+COINC_W_LEFT_LEFT_BKG			0	#			Left Background time window on the left side of the coincidence peak
+COINC_W_RIGHT_RIGHT_BKG			0	#			Right Background time window on the right side of the coincidence peak
+COINC_W_RIGHT			22	#			Time window right
+COINC_W_LEFT			18	#			Time window left
+DEBUG				YES	#			Allow reverse Si XY position reconstruction based on given source position
+SOURCE_X			0	#			Source x position [mm]
+SOURCE_Y			0	#			Source y position [mm]
+SOURCE_Z			-7110.	#			Source z position [mm]
+ENABLE_TREE			NO	#		Ebable or disable coincidence TTree branch to save memory (strongly encouraged)
+ENABLE_HISTS			YES	#		Enable histograms of coincidence
+BP_FRAGMENT_POSITION			MID_TARGET					Doppler correction position for binary partner
+FRAGMENT_POSITION			MID_TARGET					Doppler correction position for detected ion
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+USER_CONF
+EXAMPLE			0	mm			Example of configuration value
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+OPTIMIZER_CONF
+TAIL			0	#			0: notail, 1: right, 2: left, 3: left+right, 4: symmetric
+BKG_POL_ORDER			1	#			Polynomial order for background
+PRINT_LEVEL			1	#			Minimizer verbosity
+MAX_CALLS			1000	#			Maximum number of minimizer calls
+NON_CONVERGENCE_COST			5	#			Multiplier cost for fits that did not converge
+SIGMA_WEIGHT			0.5	#			Figure of merit weight on sigma. 0 means only the centroid is optimized, 1 means only the sigma, values in between are a combination
+PRECISION			0.01	#			Minimizer precision (likely leave 0 for optimally calculated value)
+TOLERANCE			0.1	#			Minimizer tolerance
+SAVE_SCAN_FILES			NO	#		Saves the output of all scan points for each parameter
+VALID_ERRORS			NO	#		Performs error analysis (e.g. run Hesse for Minuit)
+USE_INTERVALS			NO	#		Use intervals in minimization (try what is best)
+ALGORITHM			Simplex	#		Name of algorithm (Migrad, Simplex,...) see: tutorials/fit/NumericalMinimization.C.html
+MINIMIZER			Minuit	#		Name of minimizer (Minuit/Minuit2, Fumili, GLSMultiMin, Genetic)
+ROOT_FILE			out.root	#		Name optimizer output file
+LOG_FILE			log.txt	#		Name of log file for minimizer
+FIT_PAR_FILE			parameters.dat	#		Name of parameter file for fitter

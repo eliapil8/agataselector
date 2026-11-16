@@ -1,0 +1,53 @@
+##################Start of minimizer###################
+##################End of minimizer#####################
+##################Scan of TARGET_CONF of THICKNESS
+=============== it: 0 =================
+par: TARGET_CONF THICKNESS ---> val: 3.74491e+10
+COST 3401.2
+FITTED MEAN 1.434e+06
+FITTED SIGMA 6800
+=============== it: 1 =================
+par: TARGET_CONF THICKNESS ---> val: 6.24151e+09
+COST 3401.2
+FITTED MEAN 1.434e+06
+FITTED SIGMA 6800
+=============== it: 2 =================
+par: TARGET_CONF THICKNESS ---> val: 1.32632e+10
+COST 3401.2
+FITTED MEAN 1.434e+06
+FITTED SIGMA 6800
+=============== it: 3 =================
+par: TARGET_CONF THICKNESS ---> val: 2.02849e+10
+COST 3401.2
+FITTED MEAN 1.434e+06
+FITTED SIGMA 6800
+=============== it: 4 =================
+par: TARGET_CONF THICKNESS ---> val: 2.73066e+10
+COST 3401.2
+FITTED MEAN 1.434e+06
+FITTED SIGMA 6800
+=============== it: 5 =================
+par: TARGET_CONF THICKNESS ---> val: 3.43283e+10
+COST 3401.2
+FITTED MEAN 1.434e+06
+FITTED SIGMA 6800
+=============== it: 6 =================
+par: TARGET_CONF THICKNESS ---> val: 4.135e+10
+COST 3401.2
+FITTED MEAN 1.434e+06
+FITTED SIGMA 6800
+=============== it: 7 =================
+par: TARGET_CONF THICKNESS ---> val: 4.83717e+10
+COST 3401.2
+FITTED MEAN 1.434e+06
+FITTED SIGMA 6800
+=============== it: 8 =================
+par: TARGET_CONF THICKNESS ---> val: 5.53934e+10
+COST 3401.2
+FITTED MEAN 1.434e+06
+FITTED SIGMA 6800
+=============== it: 9 =================
+par: TARGET_CONF THICKNESS ---> val: 6.24151e+10
+COST 3401.2
+FITTED MEAN 1.434e+06
+FITTED SIGMA 6800

@@ -1,0 +1,14 @@
+
+TFile* f1 = TFile::Open("z50.root"); TCutG* c1 = z50; c1->SetName("z50_a126");
+TFile* f2 = TFile::Open("z51.root"); TCutG* c2 = z51; c2->SetName("z51_a128");
+TFile* f3 = TFile::Open("z52.root"); TCutG* c3 = z52; c3->SetName("z52_a130");
+TFile* f4 = TFile::Open("z53.root"); TCutG* c4 = z53; c4->SetName("z53_a132");
+TFile* f5 = TFile::Open("z54.root"); TCutG* c5 = z54; c5->SetName("z54_a134");
+
+TFile* outFile = new TFile("zCuts.root","recreate")
+c1->Write();
+c2->Write();
+c3->Write();
+c4->Write();
+c5->Write();
+outFile->Close();

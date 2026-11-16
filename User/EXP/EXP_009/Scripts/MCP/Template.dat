@@ -1,0 +1,6 @@
+pos     x_mm  y_mm  x_chan  y_chan
+center  0     0     1464    2390
+tl_cal  -21.5 26.5  2001    2970
+tr_cal  21.5  26.5  1045    2991
+bl_cal  -21.5 -26.5 1879    1828
+br_cal  21.5  -26.5 984    1887

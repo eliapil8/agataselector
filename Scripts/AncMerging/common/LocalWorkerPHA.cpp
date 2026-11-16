@@ -1,0 +1,485 @@
+#include "LocalWorkerPHA.h"
+#include <cstdio>
+#include <cstring>
+#include <algorithm>
+
+#include "rubuilder/utils/ConfReader.h"
+
+const int   specCal     =  4096;    // adc range
+const int   specRaw     = 16384;    // adc range
+const int   matPackChan =    10;
+
+using namespace std;
+
+LocalWorkerPHA::LocalWorkerPHA(CycleServer& _cServer, int& _tcpPortno, int boardID,
+			       int numdoms, int numsubs, int numsamp)
+  : LocalWorker(_cServer, _tcpPortno, boardID)
+{
+  gDaughterClass = "LocalWorkerPHA";
+  fOutMagicData = nullptr;
+  calibration.clear();
+  fGlobalTSOffset = 0L;
+  fEnergyGain = 1.f;
+  HasHeader   = false;
+  FirstBlock  = true;
+  outEvt = new caenEventPHA_t;
+  tstCount = 0;
+  fDomID = 0;
+  tstoff = 0;
+  v1730MaxChans=16;
+  fOutMagicData = new uint32_t[16];
+  fLastTS =  0;
+  aTrace = nullptr;
+  wspace = nullptr;
+  waveAnalyzer = new MWD;
+  memset(TimeShaper,  0, sizeof(TimeShaper));
+}
+
+// todo: add the delete []
+LocalWorkerPHA::~LocalWorkerPHA()
+{
+  cServer.Finish();
+  if(aTrace != nullptr)
+    delete [] aTrace;
+  if(wspace != nullptr)
+    delete [] wspace;
+  for (int ii = 0; ii < 16; ii++) {
+    if (TimeShaper[ii]) {
+      delete TimeShaper[ii];
+      TimeShaper[ii] = nullptr;
+    }
+  }
+}
+
+int LocalWorkerPHA::GetParameters(bool doList, bool partial)
+{
+  float       cTstamp(0);
+  std::string histPrefix;
+  uint32_t    calBoard(0), calChan(0);
+  float       calThresh(0), calOffs(0), calGain(1.f);
+  uint16_t    boardID, boardFW, boardCH, boardTS, boardSampling;
+  std::string boardName;
+  std::string graphServ;
+  uint32_t    graphPort;
+  int16_t    channelID;
+  float       tsOffs;
+  std::string tmpOutData;
+  uint16_t    preTrig;
+  std::string confFile;
+  bool        AnaRiseTime;
+  int         rdbPort;
+  std::string rdbHost;
+  hGroup.destroy();
+  rubuilder::utils::ConfReader conf;
+  conf.Add("SaveDataDir",      "where to write data and spectra"
+	   , &fOutPath);
+  conf.Add("SpecPrefix",       "prefix to names of spectra",
+	   &boardID, &histPrefix); 
+  conf.Add("Board",      "Board description: BoardID, Name, Firmware, number of channel, nsPerTimestamp, ns per sample",
+	   &boardID, &boardName, &boardFW, &boardCH, &boardTS, &boardSampling);
+  conf.Add("TSOffset",   "Timestamp offset for board X chanel Y",
+	   &boardID, &channelID, &tsOffs);
+  conf.Add("GraphiteServer", "Graphite Server to send the rates of the boards: Hostname and port",
+	   &graphServ, &graphPort);
+  conf.Add("OutDataKey", "Output ADF frame key (0xFA0201A2=SPIDER, 0xFA0201A3=DANTE, ...",
+	   &boardID, &tmpOutData);
+  conf.Add("PreTrigger",       "Pre-trigger time in ns (expected to be common for the full board)",
+	   &boardID, &preTrig);
+  conf.Add("ConfFilePSA",      "Configuration file for the PSA",
+	   &boardID, &confFile);
+  conf.Add("AnaRiseTime",      "Enable analysis of the short traces for the particle discrimination",
+	   &boardID, &AnaRiseTime);
+  conf.Add( "RedisServer"    ,"REDIS Server host and port",
+	    &rdbHost, &rdbPort);
+  // refine behaviour
+  
+  if (doList) { conf.Show(gMotherClass); return 0; }
+  
+  if(partial) {
+    // disable "non-calibration" keywords
+    conf.Disable("Domains");
+    conf.Disable("ServerPort");
+    conf.Disable("SaveDataDir");
+    conf.Disable("SpecPrefix");
+    conf.Disable("NumBoards");
+  }
+  
+  int rv = conf.Read(gMotherClass, fConfigFile);
+  
+  if (rv != 0)
+    return rv;  // error
+  
+  int which, times;
+
+  
+  which = conf.Find("Board");
+  times = conf.Times(which);
+  for (int nn = 0; nn < times; nn++) {
+    conf.Restore(which, nn);
+    if(boardID!=fBoardID)continue;
+    filterName << "LF_"<< boardName;
+    ratesMonitor.setName(boardName);
+    fNsPerSample  = boardSampling;
+    fNsPerTStamp  = boardTS;
+    nbChannel     = boardCH;
+    
+    for(int ch = 0 ; ch < nbChannel ; ++ch){
+      lastTS[ch]  =0;
+      nbEvents[ch]=0;
+      nbGoodEvents[ch]=0;
+      nbIdleEvents[ch]=0;
+      nbTraces[ch]=1000;
+    }
+  }  
+
+  which = conf.Find("SpecPrefix");
+  times = conf.Times(which);
+  for (int nn = 0 ; nn < times ; ++nn){
+    conf.Restore(which,nn);
+    if(boardID!=fBoardID)continue;
+    fHistPfx = histPrefix;
+    specAmpl = new MultiHist<uint32_t>(nbChannel, 16384);     // [0]-fromShaper [1]-fromTrace
+    specAmpl->setFileName(fOutPath+fHistPfx+"?Ampl.spec");
+    specAmpl->setComment("raw energy");
+    hGroup.add(specAmpl);
+  }  
+
+  if(conf.Seen("GraphiteServer")){
+    ratesMonitor.setHost(graphServ,graphPort);
+  }
+
+  which = conf.Find("OutDataKey");
+  times = conf.Times(which);
+  for (int nn = 0; nn < times; nn++) {
+    conf.Restore(which, nn);
+    if(boardID!=fBoardID)continue;
+    outDataKey = OutDataKey(tmpOutData) ;
+  }    
+ 
+  which = conf.Find("TSOffset");
+  times = conf.Times(which);
+  for (int nn = 0; nn < times; nn++) {
+    conf.Restore(which, nn);
+    if(boardID!=fBoardID) continue;
+    if(channelID==-1){
+      for(int ch = 0 ; ch < nbChannel ; ++ch){
+	tsOffset[ch]=tsOffs;
+      }
+    }else{
+      tsOffset[channelID]=tsOffs;
+    }
+  }
+
+  fPromptPeriod = max(0, fPromptPeriod);
+  cServer.SetHistGroup(&hGroup);
+
+  return rv;
+}
+
+int LocalWorkerPHA::ProcessConfig(const char* fname)
+{
+  cout << gMotherClass + "::process_config() called with file = " << fname << endl;
+  
+  string confString;
+  fConfigFile = fname;
+  
+  if (!fConfigFile.empty()) {          // use defaults, if process_config was not called
+    if (!fileExists(fConfigFile)) {
+      return 102;              // fatal error because configuration file not present
+    }
+    
+    // VME/AGAVA
+    int error_code = GetParameters();
+    if (error_code) {
+      return error_code;
+    }
+    
+    fScaleTime = 0;
+    if (fScaleDown > 0)
+      fScaleTime = (tScaleMask + 1) / fScaleDown;
+  }
+  
+  cServer.SetCommandFile(fConfigFile + ".live");
+#ifdef GAL_OFFLINE
+  cServer.AcceptExit(); // enable ECommand::kExit
+#endif
+  cServer.Start(filterName.str().c_str(), max(fPromptPeriod, 0));
+  
+  return 0;
+}
+
+int LocalWorkerPHA::ProcessStart(uint32_t run)
+{
+  fRunNumber = run;
+  fCountBlocks = 0;
+  cServer.Start(filterName.str().c_str(), max(fPromptPeriod, 0));
+  return 0;
+}
+
+int LocalWorkerPHA::ProcessStop()
+{
+  cServer.Save(true);
+  
+  cout << "Number of events in board " << fBoardID << " of this run " << cServer.GetCounts() << endl;
+  printStatistics();
+   
+  return 0;
+}
+
+int LocalWorkerPHA::ProcessBlock(const void *input_buffer,  int input_size,  int packet_ID,
+				 void *output_buffer, int output_size, int &used_output)
+{
+  uint32_t* inpBuffer   = (uint32_t*)input_buffer;
+  uint32_t* outBuffer   = (uint32_t*)output_buffer;
+  uint32_t  inpBuffSize = input_size  / sizeof(uint32_t);
+
+  //  std::cout << "Receiving data in  " << __FILE__ << std::endl;
+  int error_code = 0;
+  uint32_t posBuffer =0;
+  std::bitset<32> decodeField;
+  int outByteSize = used_output;
+  int countEvents = 0;
+  uint32_t outEvtLen = (sizeof(agataKey) + sizeof(subDataPHA_t));
+  // Aggregate buffer has a header containing different information
+  uint32_t aggLength         = inpBuffer[posBuffer++]&0x0FFFFFFF;
+  decodeField                = inpBuffer[posBuffer++];
+  uint32_t board             = project_range<27,31>(decodeField).to_ulong();
+  bool     boardFailFlag     = decodeField.test(26);
+  std::bitset<8> channelMask = project_range<0,7>(decodeField).to_ulong();
+  uint32_t aggregateCounter  = inpBuffer[posBuffer++]&0x7FFFFF;
+  uint32_t aggregateTimeTag  = inpBuffer[posBuffer++];
+  uint8_t couples[8]={0,0,0,0,0,0,0,0};
+  // we need to reconstruct the channel number from the couple id for the 
+  // 16 channels boards
+  int index = 0 ;
+  for(uint16_t bit = 0 ; bit < 8 ; bit++){ 
+    if(channelMask.test(bit)){
+      couples[index]=bit;
+      index++;
+    }
+  }
+
+  for(int ch=0; ch < nbChannel ; ch++){  
+    if(lastTS[ch]==0) lastTS[ch]=fGlobalTSOffset;
+  }
+
+  uint32_t coupleAggregateSize = 0 ;
+  uint64_t tstamp_10ns         = 0 ;
+  uint32_t fineTS              = 0 ;
+  int      offsetTS            = 0 ;
+  uint32_t flags               = 0 ;
+  bool     pur                 = false;
+  bool     satu                = false;
+  bool     lost                = false;
+  bool     trap_sat            = false;
+  uint32_t chanNum             = 0 ;
+  float    cfd                 = 0.;
+  float    offlineCFD          = 0.;
+  bool     calcCFD = false;
+  // here starts the real decoding of the data for the channels 
+
+	    std::ostringstream on;
+	    on << fOutPath + fHistPfx << "__1000-4-"
+	       << samples.size() << "-F__timing-"
+	       << setfill('0') << setw(2) << chanNum << ".dat";
+	    printf("Creating file %s for channel %i\n",on.str().c_str(),chanNum);
+	    TimeShaper[chanNum] = new Append<float>(on.str(), 4*samples.size());
+	  }
+	  if(nbTraces[chanNum]>0){
+	    float *fw0 = wspace;
+	    float *fw1 = fw0 + samples.size();
+	    float *fw2 = fw1 + samples.size();
+	    TimeShaper[chanNum]->add(aTrace,samples.size());
+	    TimeShaper[chanNum]->add(fw0,samples.size());
+	    TimeShaper[chanNum]->add(fw1,samples.size());
+	    TimeShaper[chanNum]->add(fw2,samples.size());
+	    nbTraces[chanNum]--;
+	  }
+	}
+      }
+      if(dataForm.enaExtras()){ // decoding of EXTRAS2
+	decodeField = inpBuffer[posBuffer++];
+	switch(dataForm.confExtras()) {
+	case 0: // Extended Time Stamp [31:16] ; baseline*4 [15:0]
+	  tstamp = (static_cast<uint64_t>(project_range<16,31>(decodeField).to_ulong())<<31) 
+	    | (uint64_t)tstamp;
+	  break;
+	case 1: // Reserved??
+	  break;
+	case 2: // Extended Time stamp [31:16] ; Reserved [15:10] ; Fine Time Stamp [9:0]
+	  fineTS = static_cast<uint16_t>(project_range< 0, 9>(decodeField).to_ulong());
+	  cfd    = fNsPerTStamp/1.024* fineTS; // to have it in ps units
+	  tstamp = (static_cast<uint64_t>(project_range<16,31>(decodeField).to_ulong())<<31) 
+	    | (uint64_t)tstamp;
+	  break;
+	case 3:// Reserved
+	  break;
+	case 4: // Lost Trigger Counter [31:16] ; Total Trigger [15:0]
+	  break;
+	case 5: // Positive zero crossing [31:16] ; Negative zero crossing [15:0]
+	  break;
+	case 7: // Reserved
+	  break;
+	default:
+	  break;
+	}
+      }
+      decodeField = inpBuffer[posBuffer++];
+      // the last word contains energy[0-14], PU [15] and extra[16:25]
+      satu     = decodeField.test( 4+16);
+      lost     = decodeField.test( 5+16);
+      pur      = decodeField.test( 9+16);
+      trap_sat = decodeField.test(10+16);
+
+      //	statsData.time[cpl] = tstamp*2/pow( 10, 9 );   // must be in ns
+
+      if(tsOffset.find(chanNum)!=tsOffset.end())
+	offsetTS = tsOffset[chanNum];
+      else
+	offsetTS = 0;
+      outEvt->theKey.size     = outEvtLen              ; 
+      outEvt->theKey.key      = outDataKey             ;                      // default is data:ranc1
+      tstamp_10ns             = tstamp * fNsPerTStamp / 10 ;
+      cfd                    += (tstamp*fNsPerTStamp - tstamp_10ns*10)*1000; // in ps no to loose precision when using uint16_t
+      if(calcCFD)
+	offlineCFD = offlineCFD * 1000 + (tstamp*fNsPerTStamp - tstamp_10ns*10)*1000; // in ps no to loose precision when using uint16_t
+      tstamp_10ns            += offsetTS + fGlobalTSOffset;
+      //	std::cout << __func__ << ":" << fGlobalTSOffset << std::endl;
+      if(!calcCFD)
+	outEvt->theData.cfd     = static_cast<uint16_t>(std::floor(cfd));
+      else
+	outEvt->theData.cfd     = static_cast<uint16_t>(std::floor(offlineCFD));
+
+      if(outEvt->theData.cfd>10000){
+	outEvt->theData.cfd -= 10000 ;
+	tstamp_10ns         +=     1 ;
+      }
+
+      outEvt->theKey.ts_0     = uint32_t(tstamp_10ns & 0xFFFFFFFF);         // tstLow
+      outEvt->theKey.ts_1     = uint32_t((tstamp_10ns >> 32) & 0x0000FFFF); // tstHigh
+      outEvt->theData.energy  = static_cast<uint16_t>(project_range<0,15>(decodeField).to_ulong());
+      if(HCHECK(specAmpl)){
+	specAmpl->IncrQ(chanNum,outEvt->theData.energy/4,0); // Energy is on 16 bit.
+      }
+      
+      // Adding PUR to the flag
+
+      decodeField = (board << 8 | chanNum);
+     
+      if(ratesMonitor.values.find(chanNum) == ratesMonitor.values.end())
+	ratesMonitor.values[chanNum].Init();
+      ratesMonitor.values[chanNum].time = tstamp*fNsPerTStamp;
+      ++ratesMonitor.values[chanNum].totalEvents ;
+      if( pur )      { ++ratesMonitor.values[chanNum].pileEvents ; decodeField.set(16); }
+      if( trap_sat ) { decodeField.set(17); }
+      if( satu )     { ++ratesMonitor.values[chanNum].satuEvents ; decodeField.set(18); }
+      if( lost )     { ratesMonitor.values[chanNum].lostEvents += 1024; decodeField.set(19);}
+      if( boardFailFlag ) {decodeField.set(20); }
+	
+      // N is set from bits[17:16] of register 0x1nA0 (default value 1024)
+      // Adding flags to the evt num
+
+      outEvt->theKey.evnum    = decodeField.to_ulong();
+      
+      outEvt->theKey.evnum   |= boardFailFlag;
+      ++nbEvents[chanNum];
+      countEvents++;
+      if(outEvt->theData.energy<2)continue;
+      ++nbGoodEvents[chanNum];
+      lastTS[chanNum] = tstamp_10ns;
+      if (fLastTS < tstamp_10ns) fLastTS = tstamp_10ns;
+      int outEvtSize = SetOutput(outBuffer,output_size-outByteSize,outEvt);
+      if(outEvtSize<0){ //output buffer full
+	std::cout << "Returning to LF" << std::endl;
+	return outEvtSize;
+      }
+      outByteSize += outEvtSize ;
+      outBuffer   += outEvtSize / sizeof(uint32_t) ;
+	
+    }
+  }
+   
+  if(error_code)
+    return error_code;
+  
+  used_output = outByteSize;
+  fCountBlocks++;
+  
+  cServer.Exec(tstamp_10ns, countEvents);
+  cServer.Prompt(0, countEvents, uint32_t(outByteSize)*sizeof(uint32_t));
+  
+  if (cServer.CheckCommand()) {
+    if (cServer.CheckCommand(CycleServer::ECommand::kExit))
+      return -1000;
+    if (cServer.CheckCommand(CycleServer::ECommand::kConfigure))
+      GetParameters(false, true);
+  }
+  return 0;
+  
+}
+
+int LocalWorkerPHA::SetOutput(uint32_t *outBuff, int availableBytes, const caenEventPHA_t * pE)
+{
+  // agataKey + numSubs * subData_t
+  int outEvLenByte = sizeof(agataKey) + sizeof(subDataPHA_t); // max needed size
+
+  
+  agataKey* psaKey = (agataKey *)outBuff;
+  outEvLenByte = sizeof(agataKey);                      // recalculate effective value
+  
+  // hand-made agata key
+  psaKey->size  = pE->theKey.size;
+  psaKey->key   = pE->theKey.key;
+  psaKey->ts_0  = pE->theKey.ts_0;
+  psaKey->ts_1  = pE->theKey.ts_1;
+  psaKey->evnum = pE->theKey.evnum;
+  int evtSize = (sizeof(agataKey) + sizeof(subDataPHA_t));
+  if ( evtSize > availableBytes) {
+    return availableBytes - outEvLenByte;
+  }  
+  
+  outBuff += sizeof(agataKey) / sizeof(uint32_t);       // immediatly after agataKey
+  
+  // the full size as defined in subData_t
+  subDataPHA_t pS = pE->theData;
+  memcpy(outBuff, &pS, sizeof(subDataPHA_t));
+  outEvLenByte += sizeof(subDataPHA_t);                  // recalculate effective value
+  outBuff      += sizeof(subDataPHA_t) / sizeof(uint32_t);
+  psaKey->size  = outEvLenByte;
+  return outEvLenByte;
+}
+
+int LocalWorkerPHA::GenerateIdles(uint64_t largest_ts,
+				  void *output_buffer, int output_size, int &used_output)
+{
+  uint32_t* outBuffer   = (uint32_t*)output_buffer;
+  int outByteSize = used_output;
+  uint32_t outEvtLen = (sizeof(agataKey) + sizeof(subDataPHA_t));  
+  uint64_t newTS =0 ;
+  
+  for(int ch=0; ch < nbChannel ; ch++){  
+    // if difference larger than 50ms for individual channels 
+    // we keep 50 ms to be larger than the autoflush time - hoping that it is set to the minimum value possible
+    if(lastTS[ch]<fGlobalTSOffset) lastTS[ch]=fGlobalTSOffset;
+    if ( largest_ts - lastTS[ch] < 100000 ) continue; 
+    ++nbIdleEvents[ch];
+    //at this point we generate an idle event using the eventIdx to identify them       
+    newTS = lastTS[ch] + 10000; 
+    outEvt->theKey.size     = outEvtLen;
+    outEvt->theKey.key      = outDataKey;
+    outEvt->theKey.evnum    = 0x80000000 | ((fBoardID&0xFF) << 8) | (ch&0xff) ; // 32 bit set to high as idle flag
+    outEvt->theKey.ts_0     = uint32_t(newTS & 0xFFFFFFFF);         // tstLow
+    outEvt->theKey.ts_1     = uint32_t((newTS >> 32) & 0x0000FFFF); // tstHigh
+    outEvt->theData.energy  = 0;
+    outEvt->theData.cfd     = 0;
+    int outEvtSize = SetOutput(outBuffer,output_size-outByteSize,outEvt);
+    if(outEvtSize<0){ //output buffer full
+      return outEvtSize;
+    }
+    outByteSize += outEvtSize ;
+    outBuffer   += outEvtSize / sizeof(uint32_t) ;
+    lastTS[ch] = newTS;
+  }
+  used_output = outByteSize;
+  return 0;
+}

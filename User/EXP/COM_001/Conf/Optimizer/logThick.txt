@@ -1,0 +1,586 @@
+##################Start of minimizer###################
+=============== it: 0 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2e-09
+par: AGATA_CONF X_SHIFT ---> val: 0
+par: PRISMA_CONF THETA_Y ---> val: 0
+COST 8.55381
+FITTED MEAN 1940.51
+FITTED SIGMA 5.30105
+=============== it: 1 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.19687e-09
+par: AGATA_CONF X_SHIFT ---> val: 0
+par: PRISMA_CONF THETA_Y ---> val: 0
+COST 8.50563
+FITTED MEAN 1940.39
+FITTED SIGMA 5.28886
+=============== it: 2 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.78182e-09
+par: AGATA_CONF X_SHIFT ---> val: 0
+par: PRISMA_CONF THETA_Y ---> val: 0
+COST 8.53273
+FITTED MEAN 1940.11
+FITTED SIGMA 5.36095
+=============== it: 3 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.19687e-09
+par: AGATA_CONF X_SHIFT ---> val: 0.000499792
+par: PRISMA_CONF THETA_Y ---> val: 0
+COST 8.61127
+FITTED MEAN 1940.36
+FITTED SIGMA 5.35357
+=============== it: 4 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.19687e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000199987
+par: PRISMA_CONF THETA_Y ---> val: 0
+COST 8.5246
+FITTED MEAN 1940.37
+FITTED SIGMA 5.26705
+=============== it: 5 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.19687e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000799147
+par: PRISMA_CONF THETA_Y ---> val: 0
+COST 8.54129
+FITTED MEAN 1940.4
+FITTED SIGMA 5.24299
+=============== it: 6 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.19687e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000199987
+par: PRISMA_CONF THETA_Y ---> val: 0.00871211
+COST 8.63028
+FITTED MEAN 1940.36
+FITTED SIGMA 5.57129
+=============== it: 7 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.19687e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000199987
+par: PRISMA_CONF THETA_Y ---> val: -0.00348973
+COST 8.50397
+FITTED MEAN 1940.51
+FITTED SIGMA 5.1736
+=============== it: 8 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.19687e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000199987
+par: PRISMA_CONF THETA_Y ---> val: -0.0139031
+COST 8.43368
+FITTED MEAN 1940.63
+FITTED SIGMA 5.01461
+=============== it: 9 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.19687e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000199987
+par: PRISMA_CONF THETA_Y ---> val: -0.043361
+COST 8.54943
+FITTED MEAN 1940.72
+FITTED SIGMA 5.0528
+=============== it: 10 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.39285e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000266635
+par: PRISMA_CONF THETA_Y ---> val: -0.00929078
+COST 8.38318
+FITTED MEAN 1940.45
+FITTED SIGMA 5.10289
+=============== it: 11 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.58786e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000399893
+par: PRISMA_CONF THETA_Y ---> val: -0.0139031
+COST 8.30313
+FITTED MEAN 1940.42
+FITTED SIGMA 5.04933
+=============== it: 12 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.92988e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000635208
+par: PRISMA_CONF THETA_Y ---> val: -0.0219496
+COST 8.47499
+FITTED MEAN 1940.14
+FITTED SIGMA 4.99005
+=============== it: 13 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.45797e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000199987
+par: PRISMA_CONF THETA_Y ---> val: -0.018476
+COST 8.5785
+FITTED MEAN 1940.38
+FITTED SIGMA 5.06628
+=============== it: 14 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.2623e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000199987
+par: PRISMA_CONF THETA_Y ---> val: -0.00465201
+COST 8.46606
+FITTED MEAN 1940.67
+FITTED SIGMA 5.22788
+=============== it: 15 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.50131e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000533081
+par: PRISMA_CONF THETA_Y ---> val: -0.0214961
+COST 8.55471
+FITTED MEAN 1940.38
+FITTED SIGMA 5.02683
+=============== it: 16 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.2732e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000133329
+par: PRISMA_CONF THETA_Y ---> val: -0.00542641
+COST 8.54764
+FITTED MEAN 1940.41
+FITTED SIGMA 5.22745
+=============== it: 17 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.97465e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000399893
+par: PRISMA_CONF THETA_Y ---> val: -0.0139031
+COST 8.54026
+FITTED MEAN 1940.24
+FITTED SIGMA 5.11068
+=============== it: 18 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.43193e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000399893
+par: PRISMA_CONF THETA_Y ---> val: -0.0139031
+COST 8.3528
+FITTED MEAN 1940.5
+FITTED SIGMA 4.9957
+=============== it: 19 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.65005e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000399893
+par: PRISMA_CONF THETA_Y ---> val: -0.0139031
+COST 8.51712
+FITTED MEAN 1940.39
+FITTED SIGMA 5.08496
+=============== it: 20 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.65005e-09
+par: AGATA_CONF X_SHIFT ---> val: 0
+par: PRISMA_CONF THETA_Y ---> val: -0.0139031
+COST 8.39831
+FITTED MEAN 1940.38
+FITTED SIGMA 5.08325
+=============== it: 21 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.65005e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000559707
+par: PRISMA_CONF THETA_Y ---> val: -0.0139031
+COST 8.29769
+FITTED MEAN 1940.4
+FITTED SIGMA 5.06022
+=============== it: 22 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.65005e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00103813
+par: PRISMA_CONF THETA_Y ---> val: -0.0139031
+COST 8.28769
+FITTED MEAN 1940.41
+FITTED SIGMA 5.04676
+=============== it: 23 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.65005e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00245466
+par: PRISMA_CONF THETA_Y ---> val: -0.0139031
+COST 8.41745
+FITTED MEAN 1940.27
+FITTED SIGMA 5.12171
+=============== it: 24 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.65005e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00103813
+par: PRISMA_CONF THETA_Y ---> val: 0
+COST 8.52846
+FITTED MEAN 1940.23
+FITTED SIGMA 5.25884
+=============== it: 25 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.65005e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00103813
+par: PRISMA_CONF THETA_Y ---> val: -0.0193846
+COST 8.5117
+FITTED MEAN 1940.32
+FITTED SIGMA 5.03313
+=============== it: 26 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.65005e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00103813
+par: PRISMA_CONF THETA_Y ---> val: -0.0116933
+COST 8.51364
+FITTED MEAN 1940.38
+FITTED SIGMA 5.0818
+=============== it: 27 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.6086e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00125005
+par: PRISMA_CONF THETA_Y ---> val: -0.0124309
+COST 8.4921
+FITTED MEAN 1940.43
+FITTED SIGMA 5.03793
+=============== it: 28 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.58094e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000754837
+par: PRISMA_CONF THETA_Y ---> val: -0.015127
+COST 8.49581
+FITTED MEAN 1940.47
+FITTED SIGMA 5.06109
+=============== it: 29 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.59823e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000825725
+par: PRISMA_CONF THETA_Y ---> val: -0.0142706
+COST 8.29879
+FITTED MEAN 1940.46
+FITTED SIGMA 5.07753
+=============== it: 30 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.61551e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000257749
+par: PRISMA_CONF THETA_Y ---> val: -0.0156156
+COST 8.31519
+FITTED MEAN 1940.45
+FITTED SIGMA 5.10978
+=============== it: 31 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.61378e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00050645
+par: PRISMA_CONF THETA_Y ---> val: -0.0148213
+COST 8.51323
+FITTED MEAN 1940.44
+FITTED SIGMA 5.09642
+=============== it: 32 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.71212e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00103813
+par: PRISMA_CONF THETA_Y ---> val: -0.0139031
+COST 8.32749
+FITTED MEAN 1940.39
+FITTED SIGMA 5.0536
+=============== it: 33 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.62519e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00103813
+par: PRISMA_CONF THETA_Y ---> val: -0.0139031
+COST 8.30039
+FITTED MEAN 1940.45
+FITTED SIGMA 5.04741
+=============== it: 34 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.65999e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00103813
+par: PRISMA_CONF THETA_Y ---> val: -0.0139031
+COST 8.29968
+FITTED MEAN 1940.39
+FITTED SIGMA 5.02254
+=============== it: 35 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.65999e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000257749
+par: PRISMA_CONF THETA_Y ---> val: -0.0139031
+COST 8.52196
+FITTED MEAN 1940.38
+FITTED SIGMA 5.09444
+=============== it: 36 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.65999e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00134877
+par: PRISMA_CONF THETA_Y ---> val: -0.0139031
+COST 8.48239
+FITTED MEAN 1940.45
+FITTED SIGMA 5.0105
+=============== it: 37 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.65999e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000913569
+par: PRISMA_CONF THETA_Y ---> val: -0.0139031
+COST 8.30841
+FITTED MEAN 1940.42
+FITTED SIGMA 5.09283
+=============== it: 38 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.65999e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000913569
+par: PRISMA_CONF THETA_Y ---> val: -0.0121851
+COST 8.36813
+FITTED MEAN 1940.4
+FITTED SIGMA 5.1031
+=============== it: 39 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.65999e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000913569
+par: PRISMA_CONF THETA_Y ---> val: -0.0145888
+COST 8.402
+FITTED MEAN 1940.42
+FITTED SIGMA 5.01389
+=============== it: 40 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.65999e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000913569
+par: PRISMA_CONF THETA_Y ---> val: -0.0136286
+COST 8.31721
+FITTED MEAN 1940.39
+FITTED SIGMA 5.07926
+=============== it: 41 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.65336e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00107961
+par: PRISMA_CONF THETA_Y ---> val: -0.0141775
+COST 8.3654
+FITTED MEAN 1940.43
+FITTED SIGMA 5.01914
+=============== it: 42 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.65833e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000955105
+par: PRISMA_CONF THETA_Y ---> val: -0.0137659
+COST 8.31681
+FITTED MEAN 1940.41
+FITTED SIGMA 5.09208
+=============== it: 43 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.65502e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00103813
+par: PRISMA_CONF THETA_Y ---> val: -0.0140403
+COST 8.48684
+FITTED MEAN 1940.4
+FITTED SIGMA 5.01117
+=============== it: 44 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.6575e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000975867
+par: PRISMA_CONF THETA_Y ---> val: -0.0138345
+COST 8.30647
+FITTED MEAN 1940.41
+FITTED SIGMA 5.0695
+=============== it: 45 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.6517e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00112108
+par: PRISMA_CONF THETA_Y ---> val: -0.0138574
+COST 8.29562
+FITTED MEAN 1940.42
+FITTED SIGMA 5.00717
+=============== it: 46 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.65032e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00115561
+par: PRISMA_CONF THETA_Y ---> val: -0.0139413
+COST 8.48299
+FITTED MEAN 1940.43
+FITTED SIGMA 5.01217
+=============== it: 47 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.65571e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00102084
+par: PRISMA_CONF THETA_Y ---> val: -0.0138612
+COST 8.30739
+FITTED MEAN 1940.41
+FITTED SIGMA 5.03261
+=============== it: 48 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.65999e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00103813
+par: PRISMA_CONF THETA_Y ---> val: -0.0139031
+COST 8.29968
+FITTED MEAN 1940.39
+FITTED SIGMA 5.02254
+=============== it: 49 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64607e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00103813
+par: PRISMA_CONF THETA_Y ---> val: -0.0139031
+COST 8.28768
+FITTED MEAN 1940.41
+FITTED SIGMA 5.03899
+=============== it: 50 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.63414e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00103813
+par: PRISMA_CONF THETA_Y ---> val: -0.0139031
+COST 8.29149
+FITTED MEAN 1940.44
+FITTED SIGMA 5.04038
+=============== it: 51 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64607e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000892795
+par: PRISMA_CONF THETA_Y ---> val: -0.0139031
+COST 8.31946
+FITTED MEAN 1940.42
+FITTED SIGMA 5.12035
+=============== it: 52 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64607e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.0010962
+par: PRISMA_CONF THETA_Y ---> val: -0.0139031
+COST 8.31106
+FITTED MEAN 1940.43
+FITTED SIGMA 5.01712
+=============== it: 53 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64607e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00101489
+par: PRISMA_CONF THETA_Y ---> val: -0.0139031
+COST 8.29153
+FITTED MEAN 1940.41
+FITTED SIGMA 5.03206
+=============== it: 54 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64607e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00101489
+par: PRISMA_CONF THETA_Y ---> val: -0.0138345
+COST 8.49232
+FITTED MEAN 1940.41
+FITTED SIGMA 5.03261
+=============== it: 55 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64607e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00101489
+par: PRISMA_CONF THETA_Y ---> val: -0.0139306
+COST 8.28599
+FITTED MEAN 1940.42
+FITTED SIGMA 5.03188
+=============== it: 56 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64607e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00101489
+par: PRISMA_CONF THETA_Y ---> val: -0.0140129
+COST 8.42513
+FITTED MEAN 1940.42
+FITTED SIGMA 5.02785
+=============== it: 57 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64872e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00104587
+par: PRISMA_CONF THETA_Y ---> val: -0.0139214
+COST 8.27878
+FITTED MEAN 1940.42
+FITTED SIGMA 5.02805
+=============== it: 58 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.65005e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00106136
+par: PRISMA_CONF THETA_Y ---> val: -0.0139306
+COST 8.4291
+FITTED MEAN 1940.42
+FITTED SIGMA 5.03403
+=============== it: 59 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64386e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.0010278
+par: PRISMA_CONF THETA_Y ---> val: -0.0139336
+COST 8.28704
+FITTED MEAN 1940.43
+FITTED SIGMA 5.03698
+=============== it: 60 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64622e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00102952
+par: PRISMA_CONF THETA_Y ---> val: -0.0139285
+COST 8.28712
+FITTED MEAN 1940.42
+FITTED SIGMA 5.03676
+=============== it: 61 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64872e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00104587
+par: PRISMA_CONF THETA_Y ---> val: -0.0139214
+COST 8.27878
+FITTED MEAN 1940.42
+FITTED SIGMA 5.02805
+=============== it: 62 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.65856e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00104587
+par: PRISMA_CONF THETA_Y ---> val: -0.0139214
+COST 8.27497
+FITTED MEAN 1940.39
+FITTED SIGMA 5.02047
+=============== it: 63 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.63888e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00104587
+par: PRISMA_CONF THETA_Y ---> val: -0.0139214
+COST 8.29174
+FITTED MEAN 1940.44
+FITTED SIGMA 5.04771
+=============== it: 64 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 3.63644e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00104587
+par: PRISMA_CONF THETA_Y ---> val: -0.0139214
+COST 8.51731
+FITTED MEAN 1939.9
+FITTED SIGMA 5.0311
+=============== it: 65 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 1.63232e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00104587
+par: PRISMA_CONF THETA_Y ---> val: -0.0139214
+COST 8.48656
+FITTED MEAN 1940.75
+FITTED SIGMA 5.08684
+=============== it: 66 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 6.01656e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00104587
+par: PRISMA_CONF THETA_Y ---> val: -0.0139214
+COST 8.67813
+FITTED MEAN 1938.7
+FITTED SIGMA 4.98844
+=============== it: 67 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: -1.09211e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00104587
+par: PRISMA_CONF THETA_Y ---> val: -0.0139214
+COST 9.07626
+FITTED MEAN 1942.07
+FITTED SIGMA 5.11926
+=============== it: 68 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64872e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000996112
+par: PRISMA_CONF THETA_Y ---> val: -0.0139214
+COST 8.49059
+FITTED MEAN 1940.41
+FITTED SIGMA 5.03983
+=============== it: 69 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64872e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.0010956
+par: PRISMA_CONF THETA_Y ---> val: -0.0139214
+COST 8.31199
+FITTED MEAN 1940.43
+FITTED SIGMA 5.01712
+=============== it: 70 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64872e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.000209542
+par: PRISMA_CONF THETA_Y ---> val: -0.0139214
+COST 8.37841
+FITTED MEAN 1940.38
+FITTED SIGMA 5.09444
+=============== it: 71 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64872e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00187486
+par: PRISMA_CONF THETA_Y ---> val: -0.0139214
+COST 8.5184
+FITTED MEAN 1940.43
+FITTED SIGMA 5.01929
+=============== it: 72 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64872e-09
+par: AGATA_CONF X_SHIFT ---> val: 0.00241444
+par: PRISMA_CONF THETA_Y ---> val: -0.0139214
+COST 8.56762
+FITTED MEAN 1940.27
+FITTED SIGMA 5.21666
+=============== it: 73 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64872e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00438035
+par: PRISMA_CONF THETA_Y ---> val: -0.0139214
+COST 8.47081
+FITTED MEAN 1940.47
+FITTED SIGMA 4.99317
+=============== it: 74 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64872e-09
+par: AGATA_CONF X_SHIFT ---> val: 0.00385012
+par: PRISMA_CONF THETA_Y ---> val: -0.0139214
+COST 8.55542
+FITTED MEAN 1940.33
+FITTED SIGMA 5.2466
+=============== it: 75 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64872e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.0056858
+par: PRISMA_CONF THETA_Y ---> val: -0.0139214
+COST 8.45503
+FITTED MEAN 1940.29
+FITTED SIGMA 5.03859
+=============== it: 76 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64872e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00104587
+par: PRISMA_CONF THETA_Y ---> val: -0.0130578
+COST 8.31617
+FITTED MEAN 1940.4
+FITTED SIGMA 5.06175
+=============== it: 77 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64872e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00104587
+par: PRISMA_CONF THETA_Y ---> val: -0.0147837
+COST 8.48235
+FITTED MEAN 1940.45
+FITTED SIGMA 5.01448
+=============== it: 78 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64872e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00104587
+par: PRISMA_CONF THETA_Y ---> val: -0.00279576
+COST 8.4946
+FITTED MEAN 1940.23
+FITTED SIGMA 5.23831
+=============== it: 79 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64872e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00104587
+par: PRISMA_CONF THETA_Y ---> val: -0.0248187
+COST 8.52132
+FITTED MEAN 1940.33
+FITTED SIGMA 5.15415
+=============== it: 80 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64872e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00104587
+par: PRISMA_CONF THETA_Y ---> val: 0.0256554
+COST 8.67568
+FITTED MEAN 1940.12
+FITTED SIGMA 5.85483
+=============== it: 81 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 2.64872e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00104587
+par: PRISMA_CONF THETA_Y ---> val: -0.0506212
+COST 8.57503
+FITTED MEAN 1940.52
+FITTED SIGMA 5.06801
+=============== it: 82 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 3.66551e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00104587
+par: PRISMA_CONF THETA_Y ---> val: -0.0139214
+COST 8.50769
+FITTED MEAN 1939.9
+FITTED SIGMA 5.03408
+=============== it: 83 =================
+par: PRISMA_CONF TOF_OFFSET ---> val: 1.6015e-09
+par: AGATA_CONF X_SHIFT ---> val: -0.00104587
+par: PRISMA_CONF THETA_Y ---> val: -0.0139214

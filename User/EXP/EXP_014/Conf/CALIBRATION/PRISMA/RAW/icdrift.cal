@@ -1,0 +1,34 @@
+#IC Drift time calibration
+# Layer A
+id 0 0 cal 0 1 thr 0 4096
+id 0 1 cal 0 1 thr 0 4096
+id 0 2 cal 0 1 thr 0 4096
+id 0 3 cal 0 1 thr 0 4096
+id 0 4 cal 0 1 thr 0 4096
+id 0 5 cal 0 1 thr 0 4096
+id 0 6 cal 0 1 thr 0 4096
+id 0 7 cal 0 1 thr 0 4096
+id 0 8 cal 0 1 thr 0 4096
+id 0 9 cal 0 1 thr 0 4096
+# Layer B
+id 1 0 cal 0 1 thr 0 4096
+id 1 1 cal 0 1 thr 0 4096
+id 1 2 cal 0 1 thr 0 4096
+id 1 3 cal 0 1 thr 0 4096
+id 1 4 cal 0 1 thr 0 4096
+id 1 5 cal 0 1 thr 0 4096
+id 1 6 cal 0 1 thr 0 4096
+id 1 7 cal 0 1 thr 0 4096
+id 1 8 cal 0 1 thr 0 4096
+id 1 9 cal 0 1 thr 0 4096
+# Layer C
+id 2 0 cal 0 1 thr 0 4096
+id 2 1 cal 0 1 thr 0 4096
+id 2 2 cal 0 1 thr 0 4096
+id 2 3 cal 0 1 thr 0 4096
+id 2 4 cal 0 1 thr 0 4096
+id 2 5 cal 0 1 thr 0 4096
+id 2 6 cal 0 1 thr 0 4096
+id 2 7 cal 0 1 thr 0 4096
+id 2 8 cal 0 1 thr 0 4096
+id 2 9 cal 0 1 thr 0 4096

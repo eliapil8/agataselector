@@ -1,0 +1,6 @@
+#Calibration file
+id 0  cal 0 1 thr -1000 1000000
+#id 1  cal 0 1.02098 thr -1000 1000000
+#id 1  cal 0 1.010654 thr -1000 1000000 
+#id 1  cal 0 1.02476 thr -1000 1000000
+id 1  cal 0 1.020363392 thr -1000 1000000

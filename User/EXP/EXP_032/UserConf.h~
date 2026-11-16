@@ -1,0 +1,11 @@
+#pragma once
+
+#include "Conf.h"
+
+class UserConf : public Conf {
+  public:
+    UserConf();
+
+  public:
+    double gamma_tof_offset{0};
+};

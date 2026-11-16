@@ -1,0 +1,37 @@
+/d2/data/Rosa/AgataSoftware/agapro/zPrograms/RecalEnergy -spe Data/Global/Track__24-24-1000-UI__TT.spec -num 576 -T 500 | tee  TT.txt
+
+-num 24X24
+
+
+Modify the following parameters in solveTT.py:
+
+N        = 24               # number of detectors
+datafile = "TT.txt"         # data file
+CC       = 13               # data taken from this column
+PP       = 500                # nominal position of the peaks in the original data  1.311
+
+
+/d2/data/Rosa/AgataSoftware/agapro/zUseful/solveTT.py | tee TT.solve
+
+  3.653
+  4.532
+  2.593
+-16.608
+  1.736 
+ -8.514
+  2.833
+  3.216
+ -8.336
+  0.857
+  3.146
+  1.265
+ -1.031
+  4.738
+  1.548
+ -3.634
+ -0.502
+  2.588
+  2.896
+ -0.818
+  1.759
+  0.773

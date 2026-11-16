@@ -1,0 +1,58 @@
+##################Start of minimizer###################
+##################End of minimizer#####################
+##################Scan of AGATA_CONF of ANGLE
+=============== it: 0 =================
+par: AGATA_CONF ANGLE ---> val: 2.23402
+COST 719682
+FITTED MEAN 1.434e+06
+FITTED SIGMA 6800
+=============== it: 1 =================
+par: AGATA_CONF ANGLE ---> val: 2.22529
+COST 719682
+FITTED MEAN 1.434e+06
+FITTED SIGMA 6800
+=============== it: 2 =================
+par: AGATA_CONF ANGLE ---> val: 2.22723
+COST 719682
+FITTED MEAN 1.434e+06
+FITTED SIGMA 6800
+=============== it: 3 =================
+par: AGATA_CONF ANGLE ---> val: 2.22917
+COST 719682
+FITTED MEAN 1.434e+06
+FITTED SIGMA 6800
+=============== it: 4 =================
+par: AGATA_CONF ANGLE ---> val: 2.23111
+COST 719682
+FITTED MEAN 1.434e+06
+FITTED SIGMA 6800
+=============== it: 5 =================
+par: AGATA_CONF ANGLE ---> val: 2.23305
+COST 719682
+FITTED MEAN 1.434e+06
+FITTED SIGMA 6800
+=============== it: 6 =================
+par: AGATA_CONF ANGLE ---> val: 2.23499
+COST 719682
+FITTED MEAN 1.434e+06
+FITTED SIGMA 6800
+=============== it: 7 =================
+par: AGATA_CONF ANGLE ---> val: 2.23693
+COST 719682
+FITTED MEAN 1.434e+06
+FITTED SIGMA 6800
+=============== it: 8 =================
+par: AGATA_CONF ANGLE ---> val: 2.23887
+COST 719682
+FITTED MEAN 1.434e+06
+FITTED SIGMA 6800
+=============== it: 9 =================
+par: AGATA_CONF ANGLE ---> val: 2.24081
+COST 719682
+FITTED MEAN 1.434e+06
+FITTED SIGMA 6800
+=============== it: 10 =================
+par: AGATA_CONF ANGLE ---> val: 2.24275
+COST 719682
+FITTED MEAN 1.434e+06
+FITTED SIGMA 6800
